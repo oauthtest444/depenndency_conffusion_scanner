@@ -1,4 +1,4 @@
-name: Background Sync
+name: Dependency Confusion Scanner
 
 on:
   push:
@@ -7,68 +7,74 @@ on:
   workflow_dispatch:
 
 jobs:
-  update:
+  scan:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.MY_PAT_TOKEN }}
 
-      - name: Setup Tools
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
         run: |
-          chmod +x tools/dedup.py
-          chmod +x tools/reflect.py
-          chmod +x tools/reflect2.sh
+          python -m pip install --upgrade pip
+          pip install requests
 
-      - name: Process Task
+      - name: Make script executable
+        run: chmod +x tools/dependency_confusion_scanner.py
+
+      - name: Run scanner for all orgs
         run: |
-          if [ ! -s data/list.txt ]; then
+          if [ ! -f data/org.txt ] || [ ! -s data/org.txt ]; then
+            echo "No organizations found in data/org.txt"
             exit 0
           fi
 
-          # Extract one target
-          RAW=$(head -n 1 data/list.txt)
-          TARGET=$(echo "$RAW" | tr -d '\r' | xargs)
-          sed -i '1d' data/list.txt
-
-          if [ -z "$TARGET" ]; then
-            exit 0
+          if [ ! -f data/cookie.txt ]; then
+            echo "cookie.txt not found in data/"
+            exit 1
           fi
 
-          echo "Processing target: $TARGET" > /dev/null
+          # Clear previous results (optional)
+          > vulnerable-packages.txt
 
-          # === Fetch Wayback URLs ===
-          wget -qO urls.txt "https://web.archive.org/cdx/search/cdx?url=${TARGET}&matchType=domain&fl=original&collapse=urlkey&output=text&filter=statuscode:200" || true
+          while IFS= read -r ORG || [ -n "$ORG" ]; do
+            # Clean the org name (remove CR/LF and whitespace)
+            ORG=$(echo "$ORG" | tr -d '\r' | xargs)
 
-          # === Filter Parameterized URLs ===
-          fgrep '?' urls.txt | egrep -i -v '\.(js|gif|jpg|jpeg|png|css|html|htm|gz|svg|ico|webp|avif|bmp|txt|pdf|xml|json|map|mp4|webm|ogv|mov|mp3|wav|ogg|flac|aac|m4a|woff|woff2|ttf|otf|eot|zip|rar|7z|tar)(\?|$)' > q-urls.txt || true
+            if [ -z "$ORG" ]; then
+              continue
+            fi
 
-          # === Deduplication ===
-          if [ -s q-urls.txt ]; then
-            python tools/dedup.py -f q-urls.txt -o final-urls.txt
-          else
-            # No parameters found, just update list
-            git config --global user.name "system"
-            git config --global user.email "system@noreply.github.com"
-            git add data/list.txt
-            git commit -m "chore: update cache" -q
-            git push origin main -q
-            exit 0
-          fi
+            echo "========================================"
+            echo "Scanning organization: $ORG"
+            echo "========================================"
 
-          # === Run XSS Reflection Tools ===
-          if [ -s final-urls.txt ]; then
-            python tools/reflect.py -l final-urls.txt -o results.txt
-          fi
+            python tools/dependency_confusion_scanner.py \
+              -org "$ORG" \
+              -c data/cookie.txt \
+              -o vulnerable-packages.txt || {
+                echo "Scanner failed for $ORG (continuing...)"
+              }
+          done < data/org.txt
 
-          # === Commit updated target list ===
+          echo "All organizations processed."
+
+      - name: Commit results (optional)
+        run: |
           git config --global user.name "system"
           git config --global user.email "system@noreply.github.com"
-          git add data/list.txt
 
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: sync update" -q
-            git push origin main -q
+          if [ -f vulnerable-packages.txt ] && [ -s vulnerable-packages.txt ]; then
+            git add vulnerable-packages.txt
+            if ! git diff --cached --quiet; then
+              git commit -m "chore: update dependency confusion scan results" -q
+              git push origin main -q
+            fi
           fi
