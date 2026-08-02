@@ -1,1 +1,0 @@
-npm	not-a-good-practice	https://registry.npmjs.org/not-a-good-practice
