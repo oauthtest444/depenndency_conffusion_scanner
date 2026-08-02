@@ -1,4 +1,3 @@
-alchemix-finance
 alchemyplatform
 AleoHQ
 AletheaAI
