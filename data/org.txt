@@ -1,4 +1,3 @@
-adobe-flash
 adobe-fonts
 adobeio
 Adobe-Marketing-Cloud
