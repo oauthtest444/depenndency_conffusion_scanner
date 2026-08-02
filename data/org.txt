@@ -1,4 +1,3 @@
-AleoHQ
 AletheaAI
 alexa
 alexa-labs
