@@ -1,0 +1,1 @@
+rubygems	panos-phpipam	https://rubygems.org/api/v1/gems/panos-phpipam.json
