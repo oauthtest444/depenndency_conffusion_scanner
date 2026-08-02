@@ -1,4 +1,3 @@
-Adobe-Marketing-Cloud
 Adobe-Marketing-Cloud-Apps
 adobe-marketing-cloud-mobile
 Adobe-Muse
