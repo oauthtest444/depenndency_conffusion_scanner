@@ -1,4 +1,3 @@
-AfterpayTouch
 AgicapGithub
 AgiData
 agilebits
