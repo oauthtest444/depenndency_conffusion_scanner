@@ -1,4 +1,3 @@
-alchemyplatform
 AleoHQ
 AletheaAI
 alexa
