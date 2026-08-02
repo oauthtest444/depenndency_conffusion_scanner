@@ -1,4 +1,3 @@
-adobe-fonts
 adobeio
 Adobe-Marketing-Cloud
 Adobe-Marketing-Cloud-Apps
