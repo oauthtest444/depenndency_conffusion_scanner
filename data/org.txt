@@ -1,4 +1,3 @@
-0xPolygonHermez
 0xPolygonZero
 0xProject
 100health
