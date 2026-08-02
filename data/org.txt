@@ -1,4 +1,3 @@
-alexa
 alexa-labs
 alexgo-io
 algolia
