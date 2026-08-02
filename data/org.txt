@@ -1,4 +1,3 @@
-airpay
 Airpuff
 airswap
 Airtable-Labs
