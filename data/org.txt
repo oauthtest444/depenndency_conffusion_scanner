@@ -1,4 +1,3 @@
-23andMeLabs
 23andme-private
 24sessions
 2pinetwork
