@@ -1,4 +1,3 @@
-airbnb-analysis
 AirbnbProject
 AirbnBusy
 airpay
