@@ -25,10 +25,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run scanner for all orgs
+      - name: Process one organization
         run: |
           if [ ! -f data/org.txt ] || [ ! -s data/org.txt ]; then
-            echo "No organizations found in data/org.txt"
+            echo "No organizations left in data/org.txt"
             exit 0
           fi
 
@@ -37,20 +37,46 @@ jobs:
             exit 1
           fi
 
-          python tools/dependency_confusion_scanner.py \
-            -l data/org.txt \
-            -c data/cookie.txt \
-            -o vulnerable-packages.txt
+          # Take the first org
+          RAW=$(head -n 1 data/org.txt)
+          ORG=$(echo "$RAW" | tr -d '\r' | xargs)
 
-      - name: Commit results (optional)
+          if [ -z "$ORG" ]; then
+            echo "Empty line, cleaning up..."
+            sed -i '1d' data/org.txt
+            exit 0
+          fi
+
+          echo "========================================"
+          echo "Scanning organization: $ORG"
+          echo "========================================"
+
+          # Remove the org from the list BEFORE scanning
+          # (so it won't be scanned again even if the job fails later)
+          sed -i '1d' data/org.txt
+
+          # Run the scanner for this single org
+          python tools/dependency_confusion_scanner.py \
+            -org "$ORG" \
+            -c data/cookie.txt \
+            -o vulnerable-packages.txt || {
+              echo "Scanner failed for $ORG (org already removed from list)"
+            }
+
+      - name: Commit updated org list + results
         run: |
           git config --global user.name "system"
           git config --global user.email "system@noreply.github.com"
 
-          if [ -f vulnerable-packages.txt ] && [ -s vulnerable-packages.txt ]; then
+          git add data/org.txt
+
+          if [ -f vulnerable-packages.txt ]; then
             git add vulnerable-packages.txt
-            if ! git diff --cached --quiet; then
-              git commit -m "chore: update dependency confusion scan results" -q
-              git push origin main -q
-            fi
+          fi
+
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: scanned org and updated list" -q
+            git push origin main -q
+          else
+            echo "Nothing to commit"
           fi
