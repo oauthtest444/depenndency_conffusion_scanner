@@ -1,4 +1,3 @@
-adafruit
 adahealth
 ad-dc
 AdExNetwork
