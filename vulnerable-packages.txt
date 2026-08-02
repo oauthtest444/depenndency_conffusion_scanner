@@ -1,4 +1,0 @@
-npm	backbone-amd	https://registry.npmjs.org/backbone-amd
-npm	threejs	https://registry.npmjs.org/threejs
-npm	tweenmax	https://registry.npmjs.org/tweenmax
-npm	underscore-amd	https://registry.npmjs.org/underscore-amd
