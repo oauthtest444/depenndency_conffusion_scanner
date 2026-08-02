@@ -1,0 +1,74 @@
+name: Background Sync
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.MY_PAT_TOKEN }}
+
+      - name: Setup Tools
+        run: |
+          chmod +x tools/dedup.py
+          chmod +x tools/reflect.py
+          chmod +x tools/reflect2.sh
+
+      - name: Process Task
+        run: |
+          if [ ! -s data/list.txt ]; then
+            exit 0
+          fi
+
+          # Extract one target
+          RAW=$(head -n 1 data/list.txt)
+          TARGET=$(echo "$RAW" | tr -d '\r' | xargs)
+          sed -i '1d' data/list.txt
+
+          if [ -z "$TARGET" ]; then
+            exit 0
+          fi
+
+          echo "Processing target: $TARGET" > /dev/null
+
+          # === Fetch Wayback URLs ===
+          wget -qO urls.txt "https://web.archive.org/cdx/search/cdx?url=${TARGET}&matchType=domain&fl=original&collapse=urlkey&output=text&filter=statuscode:200" || true
+
+          # === Filter Parameterized URLs ===
+          fgrep '?' urls.txt | egrep -i -v '\.(js|gif|jpg|jpeg|png|css|html|htm|gz|svg|ico|webp|avif|bmp|txt|pdf|xml|json|map|mp4|webm|ogv|mov|mp3|wav|ogg|flac|aac|m4a|woff|woff2|ttf|otf|eot|zip|rar|7z|tar)(\?|$)' > q-urls.txt || true
+
+          # === Deduplication ===
+          if [ -s q-urls.txt ]; then
+            python tools/dedup.py -f q-urls.txt -o final-urls.txt
+          else
+            # No parameters found, just update list
+            git config --global user.name "system"
+            git config --global user.email "system@noreply.github.com"
+            git add data/list.txt
+            git commit -m "chore: update cache" -q
+            git push origin main -q
+            exit 0
+          fi
+
+          # === Run XSS Reflection Tools ===
+          if [ -s final-urls.txt ]; then
+            python tools/reflect.py -l final-urls.txt -o results.txt
+          fi
+
+          # === Commit updated target list ===
+          git config --global user.name "system"
+          git config --global user.email "system@noreply.github.com"
+          git add data/list.txt
+
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sync update" -q
+            git push origin main -q
+          fi
