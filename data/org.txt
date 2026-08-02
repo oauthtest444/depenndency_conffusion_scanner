@@ -1,4 +1,3 @@
-airtablelib
 aiven
 Aiven-Labs
 ajna-finance
