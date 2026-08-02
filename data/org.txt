@@ -1,4 +1,3 @@
-23andMe
 23andMeLabs
 23andme-private
 24sessions
