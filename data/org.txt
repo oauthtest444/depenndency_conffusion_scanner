@@ -1,4 +1,3 @@
-albert-heijn
 alchemix-finance
 alchemyplatform
 AleoHQ
