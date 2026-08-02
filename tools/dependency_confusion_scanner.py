@@ -39,8 +39,7 @@ except ImportError:
 # Config
 # ──────────────────────────────────────────────
 DISCORD_WEBHOOK = (
-    "https://discord.com/api/webhooks/1342060533561688085/"
-    "06uVs1QkDo13McxLAh_vG2xBC2cRzKBShG7edxl7WI9SNcqcFHW1-CRBh76piIrYH3Ed"
+    "https://discord.com/api/webhooks/1533480804762648647/INrwXmoUejU53VJqG0QxdhmZeY7oLuXuD8WMk5zpCK81ToBWRfzsCPBnpqZojpbdFsqa"
 )
 
 USER_AGENT = (
