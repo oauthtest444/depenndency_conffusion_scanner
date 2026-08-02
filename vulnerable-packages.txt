@@ -1,2 +1,0 @@
-npm	sio-client	https://registry.npmjs.org/sio-client
-pypi	git	https://pypi.org/pypi/git/json
