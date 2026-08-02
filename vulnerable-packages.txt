@@ -1,0 +1,1 @@
+rubygems	omniauth-appdirect	https://rubygems.org/api/v1/gems/omniauth-appdirect.json
