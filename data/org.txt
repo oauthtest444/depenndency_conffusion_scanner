@@ -1,4 +1,3 @@
-agora-gouv
 Agoric
 airbnb
 airbnb-analysis
