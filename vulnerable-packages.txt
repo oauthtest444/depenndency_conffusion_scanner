@@ -1,0 +1,1 @@
+rubygems	amqp_actors	https://rubygems.org/api/v1/gems/amqp_actors.json
