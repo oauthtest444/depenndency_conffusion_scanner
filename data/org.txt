@@ -1,4 +1,3 @@
-aera-finance
 Affirm
 afterpay
 AfterpayTouch
