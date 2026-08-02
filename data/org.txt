@@ -1,4 +1,3 @@
-adobe-apiplatform
 adobebc
 Adobe-CEP
 AdobeDocs
