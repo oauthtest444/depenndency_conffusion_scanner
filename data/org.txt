@@ -1,4 +1,3 @@
-Adobe-Muse
 adobe-photoshop
 adobe-platform
 adobe-private
