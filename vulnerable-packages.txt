@@ -1,2 +1,0 @@
-pypi	Python	https://pypi.org/pypi/Python/json
-pypi	git	https://pypi.org/pypi/git/json
