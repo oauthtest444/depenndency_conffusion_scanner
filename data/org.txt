@@ -1,4 +1,3 @@
-alexgo-io
 algolia
 algolia-samples
 algorand
