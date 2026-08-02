@@ -1,5 +1,0 @@
-npm	identity_shared_attributes	https://registry.npmjs.org/identity_shared_attributes
-rubygems	identity-hostdata	https://rubygems.org/api/v1/gems/identity-hostdata.json
-rubygems	identity-logging	https://rubygems.org/api/v1/gems/identity-logging.json
-rubygems	identity_validations	https://rubygems.org/api/v1/gems/identity_validations.json
-rubygems	omniauth_login_dot_gov	https://rubygems.org/api/v1/gems/omniauth_login_dot_gov.json
