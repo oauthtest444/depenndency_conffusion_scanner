@@ -1,4 +1,3 @@
-AgicapGithub
 AgiData
 agilebits
 agora-gouv
