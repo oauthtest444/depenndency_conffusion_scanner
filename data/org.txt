@@ -1,4 +1,3 @@
-airswap
 Airtable-Labs
 airtablelib
 aiven
