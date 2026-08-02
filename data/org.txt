@@ -1,4 +1,3 @@
-adobe-webplatform
 AdobeXD
 adplabs
 adpllc
