@@ -1,4 +1,3 @@
-adobe-research
 adobe-rnd
 adobe-sign
 adobe-stock-content
