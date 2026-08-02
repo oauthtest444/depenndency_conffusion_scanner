@@ -19,15 +19,11 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
-
-      - name: Make script executable
-        run: chmod +x tools/dependency_confusion_scanner.py
 
       - name: Run scanner for all orgs
         run: |
@@ -41,30 +37,10 @@ jobs:
             exit 1
           fi
 
-          # Clear previous results (optional)
-          > vulnerable-packages.txt
-
-          while IFS= read -r ORG || [ -n "$ORG" ]; do
-            # Clean the org name (remove CR/LF and whitespace)
-            ORG=$(echo "$ORG" | tr -d '\r' | xargs)
-
-            if [ -z "$ORG" ]; then
-              continue
-            fi
-
-            echo "========================================"
-            echo "Scanning organization: $ORG"
-            echo "========================================"
-
-            python tools/dependency_confusion_scanner.py \
-              -org "$ORG" \
-              -c data/cookie.txt \
-              -o vulnerable-packages.txt || {
-                echo "Scanner failed for $ORG (continuing...)"
-              }
-          done < data/org.txt
-
-          echo "All organizations processed."
+          python tools/dependency_confusion_scanner.py \
+            -l data/org.txt \
+            -c data/cookie.txt \
+            -o vulnerable-packages.txt
 
       - name: Commit results (optional)
         run: |
