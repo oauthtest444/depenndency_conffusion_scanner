@@ -1,0 +1,1 @@
+pypi	git	https://pypi.org/pypi/git/json

@@ -1,4 +1,3 @@
-airbnb
 airbnb-analysis
 AirbnbProject
 AirbnBusy
