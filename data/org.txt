@@ -1,4 +1,3 @@
-admiralinc
 adobe
 adobe-accessibility
 adobe-apiplatform
