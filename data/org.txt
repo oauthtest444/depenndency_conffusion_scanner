@@ -1,4 +1,3 @@
-agilebits
 agora-gouv
 Agoric
 airbnb
