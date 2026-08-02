@@ -1,4 +1,3 @@
-adobe-photoshop
 adobe-platform
 adobe-private
 adobe-research
