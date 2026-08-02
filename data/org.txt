@@ -1,4 +1,3 @@
-across-protocol
 actility
 actions
 actions-on-google
