@@ -1,0 +1,550 @@
+#!/usr/bin/env python3
+"""
+Dependency Confusion Scanner
+Combines GitHub org code search + unclaimed package checks for:
+  - npm (dependencies + devDependencies)
+  - PyPI (requirements.txt)
+  - RubyGems (Gemfile + Gemfile.lock)
+
+Usage:
+  python dependency_confusion_scanner.py -org google -c /path/to/cookie.txt -o vulnerable-packages.txt
+
+Optional:
+  -l orgs.txt          # file with one org per line
+  --max-pages 5        # pages per search query (default 5)
+  --workers 40         # concurrent workers (default 40)
+  --delay 1.5          # delay between GitHub search pages (default 1.5s)
+  --no-discord         # skip Discord notification
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
+from typing import Dict, List, Optional, Set, Tuple
+from urllib.parse import quote
+
+try:
+    import requests
+except ImportError:
+    print("[-] requests is required: pip install requests", file=sys.stderr)
+    sys.exit(1)
+
+# ──────────────────────────────────────────────
+# Config
+# ──────────────────────────────────────────────
+DISCORD_WEBHOOK = (
+    "https://discord.com/api/webhooks/1342060533561688085/"
+    "06uVs1QkDo13McxLAh_vG2xBC2cRzKBShG7edxl7WI9SNcqcFHW1-CRBh76piIrYH3Ed"
+)
+
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/131.0.0.0 Safari/537.36"
+)
+
+GITHUB_SEARCH = "https://github.com/search?q=org%3A{org}%20{query}&type=code&p={page}"
+
+# Search queries (same logic as the original bash extract script)
+SEARCHES = [
+    {
+        "name": "npm-dependencies",
+        "query": "%2F%22dependencies%22%5Cs*%3A%5Cs*%5C%7B%5B%5E%7D%5D*%5C%7D%2F%20%20NOT%20is%3Aarchived%20NOT%20is%3Afork",
+        "ecosystem": "npm",
+        "kind": "dependencies",
+    },
+    {
+        "name": "npm-devDependencies",
+        "query": "%2F%22devDependencies%22%5Cs*%3A%5Cs*%5C%7B%5B%5E%7D%5D*%5C%7D%2F%20%20NOT%20is%3Aarchived%20NOT%20is%3Afork",
+        "ecosystem": "npm",
+        "kind": "devDependencies",
+    },
+    {
+        "name": "python-requirements",
+        "query": "path%3A**%2Frequirements.txt%20%20NOT%20is%3Aarchived%20NOT%20is%3Afork",
+        "ecosystem": "pypi",
+        "kind": "requirements",
+    },
+    {
+        "name": "ruby-gemfile",
+        "query": "path%3A**%2FGemfile%20%20NOT%20is%3Aarchived%20NOT%20is%3Afork",
+        "ecosystem": "rubygems",
+        "kind": "gemfile",
+    },
+    {
+        "name": "ruby-gemfile-lock",
+        "query": "path%3A**%2FGemfile.lock%20%20NOT%20is%3Aarchived%20NOT%20is%3Afork",
+        "ecosystem": "rubygems",
+        "kind": "gemfile.lock",
+    },
+]
+
+
+# ──────────────────────────────────────────────
+# Helpers
+# ──────────────────────────────────────────────
+def load_cookie(cookie_file: str) -> str:
+    path = Path(cookie_file)
+    if not path.is_file():
+        print(f"[-] Cookie file not found: {cookie_file}", file=sys.stderr)
+        sys.exit(1)
+    return path.read_text(encoding="utf-8", errors="ignore").strip()
+
+
+def session_with_cookie(cookie: str) -> requests.Session:
+    s = requests.Session()
+    s.headers.update(
+        {
+            "User-Agent": USER_AGENT,
+            "Accept": "application/json",
+            "Accept-Language": "en-US,en;q=0.9",
+        }
+    )
+    s.headers["Cookie"] = cookie
+    return s
+
+
+def github_search_page(
+    sess: requests.Session, org: str, query: str, page: int, delay: float
+) -> List[str]:
+    """Return list of raw.githubusercontent.com URLs for matching files."""
+    url = GITHUB_SEARCH.format(org=org, query=query, page=page)
+    try:
+        r = sess.get(url, timeout=30)
+    except requests.RequestException as e:
+        print(f"  [!] Request error page {page}: {e}")
+        return []
+
+    if r.status_code != 200:
+        print(f"  [!] HTTP {r.status_code} on page {page}")
+        return []
+
+    try:
+        data = r.json()
+    except json.JSONDecodeError:
+        print(f"  [!] Non-JSON response on page {page} (cookies may be invalid)")
+        return []
+
+    payload = data.get("payload") or {}
+    if payload.get("message"):
+        print(f"  [!] GitHub error: {payload['message']}")
+        return []
+
+    results = payload.get("results") or []
+    if not results:
+        return []
+
+    urls = []
+    for item in results:
+        repo = item.get("repo_nwo")
+        sha = item.get("commit_sha")
+        path = item.get("path")
+        if repo and sha and path:
+            urls.append(f"https://raw.githubusercontent.com/{repo}/{sha}/{path}")
+    return urls
+
+
+def fetch_text(url: str, timeout: int = 15) -> Optional[str]:
+    try:
+        r = requests.get(
+            url,
+            timeout=timeout,
+            headers={"User-Agent": USER_AGENT},
+        )
+        if r.status_code == 200:
+            return r.text
+    except requests.RequestException:
+        pass
+    return None
+
+
+# ──────────────────────────────────────────────
+# ──────────────────────────────────────────────
+# Package name validation (official registry rules)
+# ──────────────────────────────────────────────
+def is_valid_npm_package(name: str) -> bool:
+    """
+    npm rules for *new* unscoped packages:
+      - must be strictly lowercase
+      - length 1–214
+      - URL-safe chars only: a-z 0-9 . _ -
+      - cannot start with . or _
+      - no spaces, no @ (scoped filtered out), no $
+    Refs: https://docs.npmjs.com/cli/v10/configuring-npm/package-json#name
+    """
+    if not name or len(name) < 1 or len(name) > 214:
+        return False
+    if name.startswith(("@", "$", ".", "_")):
+        return False
+    # New packages MUST be lowercase
+    if name != name.lower():
+        return False
+    if not re.fullmatch(r"[a-z0-9][a-z0-9._-]*", name):
+        return False
+    # Reject domain-like (a.b.c) – rarely real packages
+    if re.search(r"[a-z0-9]+\.[a-z0-9]+\.[a-z0-9]+", name):
+        return False
+    if name.isdigit():
+        return False
+    return True
+
+
+def is_valid_pypi_package(name: str) -> bool:
+    """
+    PyPI / PEP 508 name rules:
+      - ASCII letters, digits, ., _, -
+      - must start and end with a letter or digit
+      - case-insensitive (normalization lowercases + collapses -_.)
+    Ref: https://packaging.python.org/en/latest/specifications/name-normalization/
+    """
+    if not name or len(name) < 1:
+        return False
+    if name.startswith(("@", "$")):
+        return False
+    # Official regex (case-insensitive)
+    if not re.fullmatch(r"([A-Z0-9]|[A-Z0-9][A-Z0-9._-]*[A-Z0-9])", name, re.IGNORECASE):
+        return False
+    return True
+
+
+def is_valid_rubygems_package(name: str) -> bool:
+    """
+    RubyGems conventions:
+      - lowercase preferred (reject uppercase)
+      - letters, digits, underscores, hyphens
+      - cannot start with digit in practice for most gems
+    Ref: https://guides.rubygems.org/name-your-gem/
+    """
+    if not name or len(name) < 1:
+        return False
+    if name.startswith(("@", "$", ".", "_")):
+        return False
+    # Reject any uppercase (convention + safer for claiming)
+    if name != name.lower():
+        return False
+    if not re.fullmatch(r"[a-z0-9][a-z0-9_-]*", name):
+        return False
+    if name.isdigit():
+        return False
+    return True
+
+
+# ──────────────────────────────────────────────
+# Extractors
+# ──────────────────────────────────────────────
+def extract_npm_deps(content: str, kind: str = "dependencies") -> Set[str]:
+    """Extract package names from a package.json dependencies / devDependencies block."""
+    pkgs: Set[str] = set()
+    pattern = re.compile(
+        rf'"{kind}"\s*:\s*\{{([^}}]*)\}}',
+        re.DOTALL | re.IGNORECASE,
+    )
+    for match in pattern.finditer(content):
+        block = match.group(1)
+        for m in re.finditer(r'"([^"]+)"\s*:\s*"([^"]*)"', block):
+            name, ver = m.group(1).strip(), m.group(2).strip()
+            # Skip non-registry references
+            if ver.startswith(
+                ("file:", "link:", "workspace:", "git+", "github:", "http:", "https:", "npm:")
+            ):
+                continue
+            # Prefer version-like values
+            if ver and not re.search(r"\d", ver) and ver.lower() not in (
+                "latest", "next", "canary", "beta", "alpha", "rc", "*"
+            ):
+                continue
+            if is_valid_npm_package(name):
+                pkgs.add(name)
+    return pkgs
+
+
+def extract_pypi(content: str) -> Set[str]:
+    pkgs: Set[str] = set()
+    for line in content.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or line.startswith("-"):
+            continue
+        m = re.match(r"^([a-zA-Z0-9][a-zA-Z0-9._-]*)", line)
+        if m and is_valid_pypi_package(m.group(1)):
+            pkgs.add(m.group(1))
+    return pkgs
+
+
+def extract_gemfile(content: str) -> Set[str]:
+    pkgs: Set[str] = set()
+    for m in re.finditer(r"""gem\s+['"]([^'"]+)['"]""", content):
+        name = m.group(1)
+        if is_valid_rubygems_package(name):
+            pkgs.add(name)
+    return pkgs
+
+
+def extract_gemfile_lock(content: str) -> Set[str]:
+    pkgs: Set[str] = set()
+    for m in re.finditer(
+        r"^\s{2,}([a-z0-9._-]+)\s*\(", content, re.MULTILINE | re.IGNORECASE
+    ):
+        name = m.group(1)
+        if is_valid_rubygems_package(name):
+            pkgs.add(name)
+    return pkgs
+
+
+def extract_packages(url: str, ecosystem: str, kind: str) -> Set[str]:
+    content = fetch_text(url)
+    if not content:
+        return set()
+    if ecosystem == "npm":
+        return extract_npm_deps(content, kind)
+    if ecosystem == "pypi":
+        return extract_pypi(content)
+    if ecosystem == "rubygems":
+        if kind == "gemfile":
+            return extract_gemfile(content)
+        return extract_gemfile_lock(content)
+    return set()
+
+
+# ──────────────────────────────────────────────
+# Registry checks
+# ──────────────────────────────────────────────
+def is_unclaimed_npm(package: str) -> Tuple[bool, str]:
+    if package.startswith("@") or package.startswith("$"):
+        return False, ""
+    url = f"https://registry.npmjs.org/{quote(package)}"
+    try:
+        r = requests.get(url, timeout=12, headers={"User-Agent": USER_AGENT})
+        if r.status_code == 404:
+            return True, url
+    except requests.RequestException:
+        pass
+    return False, ""
+
+
+def is_unclaimed_pypi(package: str) -> Tuple[bool, str]:
+    url = f"https://pypi.org/pypi/{quote(package)}/json"
+    try:
+        r = requests.get(url, timeout=12, headers={"User-Agent": USER_AGENT})
+        if r.status_code == 404:
+            return True, url
+    except requests.RequestException:
+        pass
+    return False, ""
+
+
+def is_unclaimed_rubygems(package: str) -> Tuple[bool, str]:
+    url = f"https://rubygems.org/api/v1/gems/{quote(package)}.json"
+    try:
+        r = requests.get(url, timeout=12, headers={"User-Agent": USER_AGENT})
+        if r.status_code == 404:
+            return True, url
+    except requests.RequestException:
+        pass
+    return False, ""
+
+
+def check_package(ecosystem: str, package: str) -> Optional[Tuple[str, str, str]]:
+    if ecosystem == "npm":
+        ok, evidence = is_unclaimed_npm(package)
+    elif ecosystem == "pypi":
+        ok, evidence = is_unclaimed_pypi(package)
+    elif ecosystem == "rubygems":
+        ok, evidence = is_unclaimed_rubygems(package)
+    else:
+        return None
+    if ok:
+        return ecosystem, package, evidence
+    return None
+
+
+# ──────────────────────────────────────────────
+# Discord
+# ──────────────────────────────────────────────
+def send_discord(findings: List[Tuple[str, str, str]], org: str) -> None:
+    if not findings:
+        return
+    lines = [f"**Dependency Confusion hits for `{org}`** ({len(findings)} unclaimed)\n"]
+    for eco, pkg, url in findings[:40]:
+        lines.append(f"• `{eco}` **{pkg}** → {url}")
+    if len(findings) > 40:
+        lines.append(f"\n… and {len(findings) - 40} more")
+    content = "\n".join(lines)
+    try:
+        requests.post(
+            DISCORD_WEBHOOK,
+            json={"content": content[:1900]},
+            timeout=15,
+        )
+    except requests.RequestException as e:
+        print(f"[!] Discord webhook failed: {e}")
+
+
+# ──────────────────────────────────────────────
+# Main pipeline
+# ──────────────────────────────────────────────
+def collect_urls(
+    sess: requests.Session,
+    orgs: List[str],
+    max_pages: int,
+    delay: float,
+) -> Dict[str, List[Tuple[str, str]]]:
+    collected: Dict[str, List[Tuple[str, str]]] = {
+        "npm": [],
+        "pypi": [],
+        "rubygems": [],
+    }
+
+    for org in orgs:
+        print(f"\n[*] Processing organization: {org}")
+        for search in SEARCHES:
+            print(f"  → Searching {search['name']} …")
+            for page in range(1, max_pages + 1):
+                print(f"    page {page}/{max_pages}", end="\r", flush=True)
+                urls = github_search_page(sess, org, search["query"], page, delay)
+                if not urls:
+                    print(f"    page {page}: no more results")
+                    break
+                for u in urls:
+                    collected[search["ecosystem"]].append((u, search["kind"]))
+                print(f"    page {page}: {len(urls)} files")
+                time.sleep(delay)
+    return collected
+
+
+def extract_all(
+    collected: Dict[str, List[Tuple[str, str]]],
+    workers: int,
+) -> Dict[str, Set[str]]:
+    packages: Dict[str, Set[str]] = {"npm": set(), "pypi": set(), "rubygems": set()}
+
+    tasks = []
+    for eco, items in collected.items():
+        for url, kind in items:
+            tasks.append((eco, url, kind))
+
+    print(f"\n[*] Extracting packages from {len(tasks)} files (workers={workers}) …")
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {
+            pool.submit(extract_packages, url, eco, kind): (eco, url)
+            for eco, url, kind in tasks
+        }
+        done = 0
+        for fut in as_completed(futures):
+            done += 1
+            if done % 25 == 0 or done == len(futures):
+                print(f"    extracted {done}/{len(futures)}", end="\r", flush=True)
+            eco, _ = futures[fut]
+            try:
+                pkgs = fut.result()
+                packages[eco].update(pkgs)
+            except Exception:
+                pass
+    print()
+
+    # Final safety filter
+    packages["npm"] = {p for p in packages["npm"] if is_valid_npm_package(p)}
+    packages["pypi"] = {p for p in packages["pypi"] if is_valid_pypi_package(p)}
+    packages["rubygems"] = {p for p in packages["rubygems"] if is_valid_rubygems_package(p)}
+
+    for eco, s in packages.items():
+        print(f"    {eco}: {len(s)} unique packages")
+    return packages
+
+
+def check_all(
+    packages: Dict[str, Set[str]],
+    workers: int,
+) -> List[Tuple[str, str, str]]:
+    findings: List[Tuple[str, str, str]] = []
+    tasks = []
+    for eco, pkgs in packages.items():
+        for p in pkgs:
+            tasks.append((eco, p))
+
+    print(f"\n[*] Checking {len(tasks)} packages against registries (workers={workers}) …")
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {
+            pool.submit(check_package, eco, pkg): (eco, pkg) for eco, pkg in tasks
+        }
+        done = 0
+        for fut in as_completed(futures):
+            done += 1
+            if done % 50 == 0 or done == len(futures):
+                print(f"    checked {done}/{len(futures)}", end="\r", flush=True)
+            try:
+                res = fut.result()
+                if res:
+                    findings.append(res)
+                    print(f"\n  [UNCLAIMED] {res[0]} : {res[1]}  ({res[2]})")
+            except Exception:
+                pass
+    print()
+    return findings
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Dependency Confusion scanner for GitHub organizations"
+    )
+    parser.add_argument("-org", help="Single GitHub organization")
+    parser.add_argument("-l", dest="org_list", help="File with one org per line")
+    parser.add_argument(
+        "-c", "--cookie", required=True, help="Path to cookie file (GitHub session)"
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        default="vulnerable-packages.txt",
+        help="Output file for unclaimed packages only",
+    )
+    parser.add_argument("--max-pages", type=int, default=5)
+    parser.add_argument("--workers", type=int, default=40)
+    parser.add_argument("--delay", type=float, default=1.5)
+    parser.add_argument("--no-discord", action="store_true")
+    args = parser.parse_args()
+
+    if not args.org and not args.org_list:
+        parser.error("Provide -org or -l")
+
+    orgs: List[str] = []
+    if args.org_list:
+        with open(args.org_list, encoding="utf-8") as f:
+            orgs = [line.strip() for line in f if line.strip()]
+    else:
+        orgs = [args.org]
+
+    cookie = load_cookie(args.cookie)
+    sess = session_with_cookie(cookie)
+
+    # 1. Collect raw file URLs via GitHub code search
+    collected = collect_urls(sess, orgs, args.max_pages, args.delay)
+
+    # 2. Extract package names
+    packages = extract_all(collected, args.workers)
+
+    # 3. Check registries
+    findings = check_all(packages, args.workers)
+
+    # 4. Write only vulnerable packages
+    out_path = Path(args.output)
+    with out_path.open("w", encoding="utf-8") as f:
+        for eco, pkg, url in sorted(findings):
+            f.write(f"{eco}\t{pkg}\t{url}\n")
+
+    print(f"\n[+] Done. {len(findings)} unclaimed packages written to {out_path}")
+
+    # 5. Discord
+    if not args.no_discord and findings:
+        org_label = ",".join(orgs)
+        send_discord(findings, org_label)
+        print("[+] Discord notification sent")
+
+
+if __name__ == "__main__":
+    main()
