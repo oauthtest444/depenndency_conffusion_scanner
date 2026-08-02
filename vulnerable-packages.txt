@@ -1,7 +1,0 @@
-npm	derivedtypes	https://registry.npmjs.org/derivedtypes
-npm	fun_decls	https://registry.npmjs.org/fun_decls
-npm	fun_def	https://registry.npmjs.org/fun_def
-npm	function_instantiation	https://registry.npmjs.org/function_instantiation
-npm	namespacembrs	https://registry.npmjs.org/namespacembrs
-rubygems	another_gem	https://rubygems.org/api/v1/gems/another_gem.json
-rubygems	invalid-version	https://rubygems.org/api/v1/gems/invalid-version.json
