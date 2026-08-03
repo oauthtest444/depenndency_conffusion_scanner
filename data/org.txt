@@ -1,4 +1,3 @@
-kubernetes-csi
 kubernetes-monitoring
 kubernetes-nightly
 kubernetes-security
