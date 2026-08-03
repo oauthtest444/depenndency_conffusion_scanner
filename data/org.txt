@@ -1,4 +1,3 @@
-curl
 django
 libssh
 libssh2
