@@ -1,4 +1,3 @@
-tronprotocol
 tronscan
 truecaller
 trustpilot
