@@ -1,4 +1,3 @@
-NeweggTechie
 newrelic
 newrelic-experimental
 nextcloud
