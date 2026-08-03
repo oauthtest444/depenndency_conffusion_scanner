@@ -1,4 +1,3 @@
-hashgraph
 hgraph-io
 helium
 hilton-japan
