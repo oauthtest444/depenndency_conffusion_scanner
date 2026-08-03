@@ -1,4 +1,3 @@
-uber-common
 uber-dev
 uber-go
 uber-java

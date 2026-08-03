@@ -1,1 +1,0 @@
-pypi	peloton-client	https://pypi.org/pypi/peloton-client/json	uber	https://github.com/search?q=org%3Auber+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22peloton-client%22&type=code
