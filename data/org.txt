@@ -1,4 +1,3 @@
-DynatraceServices
 dt-alliances
 dynatrace-oss
 dynatrace-oss-contrib
