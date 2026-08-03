@@ -1,4 +1,3 @@
-adobe-stock-content
 adobe-webplatform
 adobebc
 adobeio
