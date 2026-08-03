@@ -1,4 +1,3 @@
-OPPO-OpenPlatform
 oppo
 oppo-source
 OwnClud
