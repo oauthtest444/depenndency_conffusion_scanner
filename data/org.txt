@@ -1,4 +1,3 @@
-NordPass
 NordVPN
 MinaProtocol
 o1-labs
