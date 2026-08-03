@@ -1,4 +1,3 @@
-adobe-platform
 adobe-private
 adobe-research
 adobe-rnd
