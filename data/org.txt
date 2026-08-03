@@ -1,4 +1,3 @@
-yarpc
 udemy
 Ubiquiti-App
 Ubiquiti-BSP
