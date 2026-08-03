@@ -1,4 +1,3 @@
-deribit
 deriv-com
 regentmarkets
 discourse
