@@ -1,4 +1,3 @@
-bitmex-private-user
 bitsoex
 blend
 blendlabs
