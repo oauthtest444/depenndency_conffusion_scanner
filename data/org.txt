@@ -1,4 +1,3 @@
-alibabacloud-sdk-php
 alibabacloud-sdk-swift
 aliyun
 lazada
