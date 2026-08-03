@@ -1,4 +1,3 @@
-adobebc
 adobeio
 cqsupport
 tubemogul
