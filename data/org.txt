@@ -1,4 +1,3 @@
-twitter
 twitter-archive
 twitterdev
 vine
