@@ -1,4 +1,3 @@
-adobe-experience-league
 adobe-flash
 adobe-fonts
 adobe-marketing-cloud-mobile
