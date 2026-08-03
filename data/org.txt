@@ -1,4 +1,3 @@
-allegro-develop
 allegro-internal
 allegro-playground
 allegrotech-umk-torun
