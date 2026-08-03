@@ -1,4 +1,3 @@
-Palantir-GitHub
 palantir
 Palta-Data-Platform
 panther-labs
