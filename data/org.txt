@@ -1,4 +1,3 @@
-Spotify-DevEx
 spotify
 spotify-lml
 spotify-research
