@@ -1,4 +1,3 @@
-Consensys
 Consensys-DataOrg
 consensys-test
 consensys-vertical-apps
