@@ -1,4 +1,3 @@
-verizonlabs
 vz-risk
 yahoo
 yahoojapan
