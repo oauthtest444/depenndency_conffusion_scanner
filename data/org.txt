@@ -1,4 +1,3 @@
-skybet
 Forescout
 freshworks
 freshworks-apps
