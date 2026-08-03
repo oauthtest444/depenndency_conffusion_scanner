@@ -1,4 +1,3 @@
-webServiceTronapi
 TRON
 troncore
 tronprotocol
