@@ -1,4 +1,3 @@
-creditkarma
 CrowdStrike
 crypto-com
 crypto-org-chain
