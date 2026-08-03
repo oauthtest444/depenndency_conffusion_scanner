@@ -1,4 +1,0 @@
-pypi	scanner.run	https://pypi.org/pypi/scanner.run/json	coinbase	https://github.com/search?q=org%3Acoinbase+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22scanner.run%22&type=code
-pypi	stub_req_with_400_response	https://pypi.org/pypi/stub_req_with_400_response/json	coinbase	https://github.com/search?q=org%3Acoinbase+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22stub_req_with_400_response%22&type=code
-pypi	stub_req_with_empty_response	https://pypi.org/pypi/stub_req_with_empty_response/json	coinbase	https://github.com/search?q=org%3Acoinbase+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22stub_req_with_empty_response%22&type=code
-pypi	stub_req_with_valid_response	https://pypi.org/pypi/stub_req_with_valid_response/json	coinbase	https://github.com/search?q=org%3Acoinbase+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22stub_req_with_valid_response%22&type=code
