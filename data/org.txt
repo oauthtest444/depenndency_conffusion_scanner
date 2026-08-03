@@ -1,4 +1,3 @@
-stripe-precisely-sample
 stripe-samples
 superbet-group
 superbet-zendesk
