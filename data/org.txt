@@ -1,4 +1,3 @@
-WhatsApp
 facebook
 facebookexperimental
 facebookincubator
