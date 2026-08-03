@@ -1,4 +1,3 @@
-alibaba-cloud-linux
 alibabacloud-sdk-php
 alibabacloud-sdk-swift
 aliyun

@@ -1,6 +1,0 @@
-npm	egg-dev	https://registry.npmjs.org/egg-dev	alibaba	https://github.com/search?q=org%3Aalibaba+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22egg-dev%22&type=code
-pypi	emo2vec-versa	https://pypi.org/pypi/emo2vec-versa/json	alibaba	https://github.com/search?q=org%3Aalibaba+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22emo2vec-versa%22&type=code
-pypi	gpurir	https://pypi.org/pypi/gpurir/json	alibaba	https://github.com/search?q=org%3Aalibaba+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22gpurir%22&type=code
-pypi	myshell-openvoice	https://pypi.org/pypi/myshell-openvoice/json	alibaba	https://github.com/search?q=org%3Aalibaba+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22myshell-openvoice%22&type=code
-pypi	torch-warmup-lr	https://pypi.org/pypi/torch-warmup-lr/json	alibaba	https://github.com/search?q=org%3Aalibaba+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22torch-warmup-lr%22&type=code
-pypi	visqol	https://pypi.org/pypi/visqol/json	alibaba	https://github.com/search?q=org%3Aalibaba+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22visqol%22&type=code
