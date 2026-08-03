@@ -1,4 +1,3 @@
-github
 hubotio
 integrations
 jekyll
