@@ -1,4 +1,3 @@
-vanilla
 vend
 vimeo
 SwiftVISA
