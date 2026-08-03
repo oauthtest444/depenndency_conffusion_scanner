@@ -1,4 +1,3 @@
-alexa
 alexa-labs
 amazon-archives
 amazon-connect
