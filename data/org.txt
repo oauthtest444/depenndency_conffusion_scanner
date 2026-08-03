@@ -1,4 +1,3 @@
-ydn
 Yelp
 seatme
 getyoti
