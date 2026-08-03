@@ -1,4 +1,3 @@
-dependabot
 desktop
 docs
 git-lfs
