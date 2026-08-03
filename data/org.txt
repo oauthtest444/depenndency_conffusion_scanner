@@ -1,4 +1,3 @@
-hypr
 iandunn
 apache
 argoproj
