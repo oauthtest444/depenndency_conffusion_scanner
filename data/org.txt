@@ -1,4 +1,3 @@
-venmo
 xoom
 phacility
 pillarwallet
