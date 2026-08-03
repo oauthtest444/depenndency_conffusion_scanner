@@ -1,4 +1,3 @@
-sheincorp-opensource
 sheinsight
 shipt
 Shopify
