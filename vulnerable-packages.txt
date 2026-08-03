@@ -1,0 +1,2 @@
+pypi	pyg_lib	https://pypi.org/pypi/pyg_lib/json	grab	https://github.com/search?q=org%3Agrab+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22pyg_lib%22&type=code
+rubygems	luna-rubocop-formatters	https://rubygems.org/api/v1/gems/luna-rubocop-formatters.json	grab	https://github.com/search?q=org%3Agrab+%28path%3A%2A%2A%2FGemfile+OR+path%3A%2A%2A%2FGemfile.lock%29+NOT+is%3Aarchived+NOT+is%3Afork+%22luna-rubocop-formatters%22&type=code
