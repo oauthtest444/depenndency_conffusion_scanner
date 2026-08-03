@@ -1,4 +1,3 @@
-Ubiquiti-App
 Ubiquiti-BSP
 Ubiquiti-CN
 Ubiquiti-Cloud
