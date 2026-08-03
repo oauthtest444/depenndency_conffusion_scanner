@@ -1,0 +1,15 @@
+npm	bootstrap3-typeahead	https://registry.npmjs.org/bootstrap3-typeahead	apache	https://github.com/search?q=org%3Aapache+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22bootstrap3-typeahead%22&type=code
+pypi	Authorization	https://pypi.org/pypi/Authorization/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22Authorization%22&type=code
+pypi	Continue	https://pypi.org/pypi/Continue/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22Continue%22&type=code
+pypi	Description	https://pypi.org/pypi/Description/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22Description%22&type=code
+pypi	Error	https://pypi.org/pypi/Error/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22Error%22&type=code
+pypi	Group	https://pypi.org/pypi/Group/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22Group%22&type=code
+pypi	Identification	https://pypi.org/pypi/Identification/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22Identification%22&type=code
+pypi	Introduction	https://pypi.org/pypi/Introduction/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22Introduction%22&type=code
+pypi	NON-CONFLICTS	https://pypi.org/pypi/NON-CONFLICTS/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22NON-CONFLICTS%22&type=code
+pypi	NON-REQUIREMENTS	https://pypi.org/pypi/NON-REQUIREMENTS/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22NON-REQUIREMENTS%22&type=code
+pypi	OpendID	https://pypi.org/pypi/OpendID/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22OpendID%22&type=code
+pypi	REQUIREMENTS	https://pypi.org/pypi/REQUIREMENTS/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22REQUIREMENTS%22&type=code
+pypi	Requirements	https://pypi.org/pypi/Requirements/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22Requirements%22&type=code
+pypi	Session	https://pypi.org/pypi/Session/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22Session%22&type=code
+pypi	TypeKey	https://pypi.org/pypi/TypeKey/json	apache	https://github.com/search?q=org%3Aapache+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22TypeKey%22&type=code
