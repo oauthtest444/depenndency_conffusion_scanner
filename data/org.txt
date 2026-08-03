@@ -1,4 +1,3 @@
-Zilliqa
 ZilliqaResearch
 zilliqajs
 Zomato
