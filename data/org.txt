@@ -1,4 +1,3 @@
-GitLab-Red-Team
 gitlabhq
 Glassdoor
 gojek
