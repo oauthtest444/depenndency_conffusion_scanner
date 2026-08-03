@@ -1,4 +1,3 @@
-harvesthq
 hashgraph
 hgraph-io
 helium
