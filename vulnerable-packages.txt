@@ -1,7 +1,0 @@
-npm	cjs-a	https://registry.npmjs.org/cjs-a	endojs	https://github.com/search?q=org%3Aendojs+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22cjs-a%22&type=code
-npm	cjs-b	https://registry.npmjs.org/cjs-b	endojs	https://github.com/search?q=org%3Aendojs+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22cjs-b%22&type=code
-npm	cjs-named	https://registry.npmjs.org/cjs-named	endojs	https://github.com/search?q=org%3Aendojs+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22cjs-named%22&type=code
-npm	env-gated	https://registry.npmjs.org/env-gated	endojs	https://github.com/search?q=org%3Aendojs+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22env-gated%22&type=code
-npm	esm-a	https://registry.npmjs.org/esm-a	endojs	https://github.com/search?q=org%3Aendojs+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22esm-a%22&type=code
-npm	esm-b	https://registry.npmjs.org/esm-b	endojs	https://github.com/search?q=org%3Aendojs+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22esm-b%22&type=code
-npm	tla-dep	https://registry.npmjs.org/tla-dep	endojs	https://github.com/search?q=org%3Aendojs+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22tla-dep%22&type=code
