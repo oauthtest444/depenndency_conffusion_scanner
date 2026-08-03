@@ -1,4 +1,3 @@
-SwiftVISA
 visa
 visa-DevOpsBeee
 visa-innovation-sf
