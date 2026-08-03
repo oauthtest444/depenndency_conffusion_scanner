@@ -1,4 +1,3 @@
-BitMEX-old-enterprise-archive
 BitMEX-private
 bitmex-bmx-genesis
 bitmex-candidates
