@@ -1,4 +1,3 @@
-flickr
 FloQast
 PaddyPower
 PaddyPowerBetfair
