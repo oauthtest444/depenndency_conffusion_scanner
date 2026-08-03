@@ -1,4 +1,3 @@
-razorpay
 recarga
 recordedfuture
 dubsmash
