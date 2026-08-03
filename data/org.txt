@@ -1,4 +1,3 @@
-spotify-research
 starbucks
 starbucks-china
 stripe
