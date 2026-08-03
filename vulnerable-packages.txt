@@ -1,0 +1,1 @@
+pypi	pokemon_app_sdk	https://pypi.org/pypi/pokemon_app_sdk/json	palantir	https://github.com/search?q=org%3Apalantir+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22pokemon_app_sdk%22&type=code

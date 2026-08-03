@@ -1,4 +1,3 @@
-palantir
 Palta-Data-Platform
 panther-labs
 panther-labs-recruiting
