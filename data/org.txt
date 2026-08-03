@@ -1,4 +1,3 @@
-coinbase
 coinbase-samples
 coinhako
 CompassChina
