@@ -1,4 +1,3 @@
-Glassdoor
 gojek
 goldmansachs
 goodrx
