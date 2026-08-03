@@ -1,4 +1,3 @@
-CoinbaseStablecoin
 CoinbaseWallet
 base-org
 coinbase
