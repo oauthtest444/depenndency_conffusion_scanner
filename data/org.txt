@@ -1,4 +1,3 @@
-InvisionPowerServices
 irccloud
 iron-fish
 judgeme
