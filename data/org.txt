@@ -1,4 +1,3 @@
-cqsupport
 tubemogul
 typekit
 Affirm
