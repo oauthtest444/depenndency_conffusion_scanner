@@ -1,4 +1,3 @@
-WickrMe
 WordPoints
 GlotPress
 WordPress
