@@ -1,4 +1,3 @@
-uber
 uber-common
 uber-dev
 uber-go
