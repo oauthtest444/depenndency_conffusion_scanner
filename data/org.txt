@@ -1,4 +1,3 @@
-vend
 vimeo
 SwiftVISA
 visa
