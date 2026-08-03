@@ -1,4 +1,3 @@
-databricks
 databricks-collab
 databrickslabs
 DataStax-Academy
