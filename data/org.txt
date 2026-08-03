@@ -1,4 +1,3 @@
-betfair
 betfair-datascientists
 betfair-down-under
 skybet
