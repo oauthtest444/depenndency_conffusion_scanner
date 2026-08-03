@@ -1,4 +1,3 @@
-iqlusioninc
 tendermint
 creditkarma
 CrowdStrike
