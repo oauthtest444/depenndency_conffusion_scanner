@@ -1,4 +1,3 @@
-elastic
 swiftype
 EngelVoelkers
 enjin
