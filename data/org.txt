@@ -1,4 +1,3 @@
-rack
 rails
 ruby
 rubygems
