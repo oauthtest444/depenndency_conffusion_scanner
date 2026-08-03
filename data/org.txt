@@ -1,4 +1,3 @@
-Agoric
 endojs
 AirbnBusy
 AirbnbProject
