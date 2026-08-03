@@ -1,4 +1,3 @@
-freshworks
 freshworks-apps
 freshworks-dev-community
 freshworks-developers
