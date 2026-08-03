@@ -1,4 +1,3 @@
-crypto-org-chain
 curl
 Dashlane
 databricks
