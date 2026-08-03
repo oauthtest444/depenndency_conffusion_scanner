@@ -1,4 +1,3 @@
-OpenSea-clone
 ProjectOpenSea
 OPPO-OpenPlatform
 oppo
