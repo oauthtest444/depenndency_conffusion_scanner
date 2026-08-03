@@ -1,4 +1,3 @@
-att-innovate
 att-iotstarterkits
 attdevsupport
 attiot
