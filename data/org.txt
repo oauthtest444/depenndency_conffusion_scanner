@@ -1,4 +1,3 @@
-hyperledger-labs
 hypr
 iandunn
 apache
