@@ -1,4 +1,3 @@
-challonge
 logihackdays
 stream-labs
 lyst
