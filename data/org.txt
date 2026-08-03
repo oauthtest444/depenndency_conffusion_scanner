@@ -1,4 +1,3 @@
-stripe
 stripe-archive
 stripe-ctf
 stripe-demos
