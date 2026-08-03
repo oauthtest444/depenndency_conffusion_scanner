@@ -1,4 +1,3 @@
-stripe-demos
 stripe-interview
 stripe-ios
 stripe-precisely-sample
