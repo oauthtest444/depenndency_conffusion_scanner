@@ -1,4 +1,3 @@
-kubernetes-nightly
 kubernetes-security
 kubernetes-sigs
 kubernetes-ui
