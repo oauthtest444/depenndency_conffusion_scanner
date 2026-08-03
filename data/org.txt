@@ -1,4 +1,3 @@
-adobe-sign
 adobe-stock-content
 adobe-webplatform
 adobebc
