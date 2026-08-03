@@ -1,4 +1,3 @@
-ruby
 rubygems
 rust-lang
 spiffe
