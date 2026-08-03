@@ -1,4 +1,3 @@
-ExpediaIncOpenSource
 HotelsDotCom
 Stayz
 vrbo
