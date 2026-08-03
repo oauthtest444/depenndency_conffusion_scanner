@@ -1,4 +1,3 @@
-ATTHACKSF
 att
 att-cloudnative-labs
 att-comdev
