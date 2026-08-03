@@ -1,4 +1,3 @@
-adobe-flash
 adobe-fonts
 adobe-marketing-cloud-mobile
 adobe-photoshop
