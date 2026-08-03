@@ -1,4 +1,3 @@
-facebookmicrosites
 facebookresearch
 fbsamples
 flowtype
