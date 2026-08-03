@@ -1,4 +1,3 @@
-OMGWINNING
 alchemyplatform
 algolia
 algolia-samples
