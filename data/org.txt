@@ -1,4 +1,3 @@
-visa
 visa-DevOpsBeee
 visa-innovation-sf
 wealthsimple
