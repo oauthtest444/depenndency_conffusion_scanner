@@ -1,4 +1,3 @@
-att-iotstarterkits
 attdevsupport
 attiot
 attm2x
