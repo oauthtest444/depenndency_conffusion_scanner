@@ -1,4 +1,3 @@
-Ubiquiti-External
 Ubiquiti-Mobile
 Ubiquiti-Vault
 ubiquiti
