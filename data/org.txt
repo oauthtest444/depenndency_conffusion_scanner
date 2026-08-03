@@ -1,4 +1,3 @@
-phacility
 pillarwallet
 pingidentity-provisioner
 pingidentity
