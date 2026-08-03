@@ -1,4 +1,3 @@
-rails
 razorpay
 recarga
 recordedfuture
