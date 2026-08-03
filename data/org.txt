@@ -1,4 +1,3 @@
-Automattic
 tumblr
 woocommerce
 basecamp

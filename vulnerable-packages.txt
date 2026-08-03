@@ -1,0 +1,5 @@
+npm	ui.core	https://registry.npmjs.org/ui.core	Automattic	https://github.com/search?q=org%3AAutomattic+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22ui.core%22&type=code
+npm	ui.draggable	https://registry.npmjs.org/ui.draggable	Automattic	https://github.com/search?q=org%3AAutomattic+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22ui.draggable%22&type=code
+npm	ui.mouse	https://registry.npmjs.org/ui.mouse	Automattic	https://github.com/search?q=org%3AAutomattic+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22ui.mouse%22&type=code
+npm	ui.slider	https://registry.npmjs.org/ui.slider	Automattic	https://github.com/search?q=org%3AAutomattic+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22ui.slider%22&type=code
+npm	ui.widget	https://registry.npmjs.org/ui.widget	Automattic	https://github.com/search?q=org%3AAutomattic+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22ui.widget%22&type=code
