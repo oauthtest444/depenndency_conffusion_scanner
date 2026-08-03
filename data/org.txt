@@ -1,4 +1,3 @@
-cloudbees-dse
 cloudbees-github-actions
 cloudbees-io
 cloudbees-workshops
