@@ -1,4 +1,3 @@
-hyatt
 hyperledger
 hyperledger-labs
 hypr
