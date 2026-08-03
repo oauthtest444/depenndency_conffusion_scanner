@@ -1,4 +1,3 @@
-MagicLabs
 magiceden
 magiceden-oss
 mainwp
