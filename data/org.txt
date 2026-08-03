@@ -1,4 +1,3 @@
-blendlabs
 blockchain
 blockfi
 BMW-InnovationLab
