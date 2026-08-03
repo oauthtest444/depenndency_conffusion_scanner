@@ -1,4 +1,3 @@
-OwnClud
 owncloud
 owncloud-ansible
 owncloud-archive
