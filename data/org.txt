@@ -1,4 +1,3 @@
-thriftrw
 uber
 uber-common
 uber-dev
