@@ -1,4 +1,3 @@
-curl
 Dashlane
 databricks
 databricks-collab
