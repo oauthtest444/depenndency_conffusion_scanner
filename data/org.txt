@@ -1,4 +1,3 @@
-bitmex-bmx-genesis
 bitmex-candidates
 bitmex-private-user
 bitsoex
