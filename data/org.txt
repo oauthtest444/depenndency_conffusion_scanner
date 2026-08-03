@@ -1,4 +1,3 @@
-kolesa-team
 kradencom
 krispai
 charmed-kubernetes
