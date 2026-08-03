@@ -1,4 +1,3 @@
-primer
 probot
 tree-sitter
 GitLab-Red-Team
