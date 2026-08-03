@@ -1,4 +1,3 @@
-lyst
 MagicLabs
 magiceden
 magiceden-oss
