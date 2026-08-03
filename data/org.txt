@@ -1,4 +1,3 @@
-internetorg
 fanduel
 fanduel-oss
 faradayio
