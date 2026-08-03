@@ -1,4 +1,3 @@
-cloudbees-io
 cloudbees-workshops
 cloudflare
 coda
