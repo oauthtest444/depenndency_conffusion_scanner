@@ -1,4 +1,3 @@
-PowerDNS
 dovecot
 open-xchange
 OpenSea-Templates
