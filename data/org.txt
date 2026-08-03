@@ -1,4 +1,3 @@
-recordedfuture
 dubsmash
 reddit
 reddit-archive
