@@ -1,1 +1,0 @@
-pypi	difflib	https://pypi.org/pypi/difflib/json	grammarly	https://github.com/search?q=org%3Agrammarly+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22difflib%22&type=code
