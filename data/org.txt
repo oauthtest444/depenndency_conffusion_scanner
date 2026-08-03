@@ -1,4 +1,3 @@
-gravitational
 CFETeam
 TCloudBase
 Tencent
