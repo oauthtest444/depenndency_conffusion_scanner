@@ -1,4 +1,3 @@
-binary-com
 bitaccess
 BitMEX
 BitMEX-old-enterprise-archive
