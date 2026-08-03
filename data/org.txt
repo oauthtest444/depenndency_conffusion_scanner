@@ -1,4 +1,3 @@
-Verizon
 VerizonCloud
 VerizonDigital
 VerizonDigitalMedia
