@@ -1,4 +1,3 @@
-Tencent-YouTu
 TencentCloud
 TencentCloudBase
 TencentCloudBase-Marketplace
