@@ -1,4 +1,3 @@
-urbandictionary
 valvesoftware
 vanilla
 vend
