@@ -1,4 +1,3 @@
-miroapp
 monero-project
 moneybird
 mongodb
