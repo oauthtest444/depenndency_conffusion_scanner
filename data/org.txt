@@ -1,4 +1,3 @@
-monero-project
 moneybird
 mongodb
 mongodb-developer
