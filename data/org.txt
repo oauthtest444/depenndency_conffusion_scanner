@@ -1,4 +1,3 @@
-tari-labs
 tari-project
 gravitational
 CFETeam
