@@ -1,4 +1,3 @@
-Spark22Labs
 fireblocks
 fireblocks-labs
 flickr
