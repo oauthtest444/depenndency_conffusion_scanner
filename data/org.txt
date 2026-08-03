@@ -1,4 +1,3 @@
-Affirm
 Agoric
 endojs
 AirbnBusy
