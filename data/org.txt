@@ -1,4 +1,3 @@
-sony
 sorare
 Spotify-DevEx
 spotify

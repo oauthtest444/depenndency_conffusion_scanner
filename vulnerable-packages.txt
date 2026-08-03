@@ -1,0 +1,2 @@
+pypi	nnabla_ext_cuda101	https://pypi.org/pypi/nnabla_ext_cuda101/json	sony	https://github.com/search?q=org%3Asony+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22nnabla_ext_cuda101%22&type=code
+pypi	umap	https://pypi.org/pypi/umap/json	sony	https://github.com/search?q=org%3Asony+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22umap%22&type=code
