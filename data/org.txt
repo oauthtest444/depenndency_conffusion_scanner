@@ -1,4 +1,3 @@
-theparanoids
 verizonconnect
 verizonlabs
 vz-risk
