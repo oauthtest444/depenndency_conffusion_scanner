@@ -1,4 +1,3 @@
-Ubiquiti-CN
 Ubiquiti-Cloud
 Ubiquiti-DevOps
 Ubiquiti-External
