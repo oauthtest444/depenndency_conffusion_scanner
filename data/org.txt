@@ -1,4 +1,3 @@
-cloudbees-compliance
 cloudbees-dse
 cloudbees-github-actions
 cloudbees-io
