@@ -1,4 +1,3 @@
-Dynatrace-India
 DynatraceServices
 dt-alliances
 dynatrace-oss
