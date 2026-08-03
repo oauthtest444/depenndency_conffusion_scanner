@@ -1,4 +1,3 @@
-SmartsheetConsulting
 smartsheet
 smartsheet-mobile
 smartsheet-platform
