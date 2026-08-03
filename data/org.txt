@@ -1,4 +1,3 @@
-sideeffects
 skalenetwork
 skinport
 slack-samples
