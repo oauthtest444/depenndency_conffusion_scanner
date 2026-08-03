@@ -1,4 +1,3 @@
-brave-experiments
 brave-intl
 bumble-tech
 caesarsdigital
