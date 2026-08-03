@@ -1,4 +1,3 @@
-kradencom
 krispai
 charmed-kubernetes
 kube-rs
