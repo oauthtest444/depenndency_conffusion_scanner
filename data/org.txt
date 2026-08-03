@@ -1,4 +1,3 @@
-att-comdev
 att-esst
 att-innovate
 att-iotstarterkits
