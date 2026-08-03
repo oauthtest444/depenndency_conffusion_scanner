@@ -1,4 +1,3 @@
-pyro-ppl
 thriftrw
 uber
 uber-common
