@@ -1,4 +1,3 @@
-datastax
 deliveroo
 deribit
 deriv-com
