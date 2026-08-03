@@ -1,4 +1,3 @@
-hgraph-io
 helium
 hilton-japan
 hirosystems
