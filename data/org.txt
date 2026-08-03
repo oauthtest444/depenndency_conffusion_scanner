@@ -1,4 +1,3 @@
-zerobounce-llc
 Switcheo
 Zilliqa
 ZilliqaResearch
