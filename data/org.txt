@@ -1,4 +1,3 @@
-cornershop
 cosmos
 iqlusioninc
 tendermint
