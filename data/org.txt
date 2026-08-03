@@ -1,4 +1,3 @@
-Mergifyio
 Mergifyio-demo-organization
 mergify-demo
 mergify-sandbox
