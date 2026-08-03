@@ -1,4 +1,3 @@
-radancyco
 rails
 razorpay
 recarga
