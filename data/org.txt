@@ -1,4 +1,3 @@
-JoinPogo
 poloniex
 PortSwigger
 postmates
