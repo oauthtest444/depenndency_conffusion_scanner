@@ -1,4 +1,3 @@
-TheTorProject
 gettorbrowser
 Trendyol
 dolap-tech
