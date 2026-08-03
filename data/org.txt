@@ -1,4 +1,3 @@
-InditexTech
 inditex
 inditex-sandbox
 inditex-zboost
