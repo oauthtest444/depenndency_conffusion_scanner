@@ -1,4 +1,3 @@
-desktop
 docs
 git-lfs
 github
