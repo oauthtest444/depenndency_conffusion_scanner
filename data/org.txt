@@ -1,4 +1,3 @@
-nodejs
 NordLocker
 NordPass
 NordVPN
