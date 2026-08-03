@@ -1,4 +1,3 @@
-wordpress-mobile
 wp-cli
 XDeFi-tech
 xiaomi-automl
