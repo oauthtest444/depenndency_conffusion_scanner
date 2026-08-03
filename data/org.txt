@@ -1,4 +1,3 @@
-brave
 brave-experiments
 brave-intl
 bumble-tech
