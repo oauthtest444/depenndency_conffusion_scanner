@@ -1,4 +1,3 @@
-WordPoints
 GlotPress
 WordPress
 wordpress-mobile
