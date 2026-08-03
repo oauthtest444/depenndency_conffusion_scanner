@@ -1,4 +1,3 @@
-uber-node
 uber-research
 uber-web
 uber-workflow
