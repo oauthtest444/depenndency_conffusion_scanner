@@ -1,4 +1,3 @@
-kubernetes-monitoring
 kubernetes-nightly
 kubernetes-security
 kubernetes-sigs
