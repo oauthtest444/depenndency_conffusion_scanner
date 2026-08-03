@@ -1,4 +1,3 @@
-Remitly
 remitly-oss
 ViaTransportation
 robinhood
