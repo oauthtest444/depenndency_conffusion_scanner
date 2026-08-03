@@ -1,4 +1,3 @@
-owncloud-archive
 owncloud-ci
 owncloud-devops
 owncloud-docker
