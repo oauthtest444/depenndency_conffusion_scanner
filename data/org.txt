@@ -1,4 +1,3 @@
-getyoti
 lampkicking
 yuga-labs
 zabbix
