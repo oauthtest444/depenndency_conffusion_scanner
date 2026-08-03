@@ -1,4 +1,3 @@
-CoinbaseWallet
 base-org
 coinbase
 coinbase-samples
