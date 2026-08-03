@@ -1,4 +1,3 @@
-trufflesuite
 cornershop
 cosmos
 iqlusioninc
