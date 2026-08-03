@@ -1,4 +1,3 @@
-Citrix-TechSpecialist
 citrix
 clario-tech
 cloudbees-compliance
