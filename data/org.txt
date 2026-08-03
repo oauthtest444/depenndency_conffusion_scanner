@@ -1,4 +1,3 @@
-nginxinc
 openssl
 rack
 rails
