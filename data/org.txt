@@ -1,4 +1,3 @@
-kubernetes-sigs
 kubernetes-ui
 larksuite
 launchdarkly
