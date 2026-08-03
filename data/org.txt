@@ -1,4 +1,3 @@
-magiceden
 magiceden-oss
 mainwp
 Malwarebytes
