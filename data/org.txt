@@ -1,4 +1,3 @@
-hubotio
 integrations
 jekyll
 npm

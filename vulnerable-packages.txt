@@ -1,0 +1,1 @@
+npm	lolimadeupthispackage	https://registry.npmjs.org/lolimadeupthispackage	hubotio	https://github.com/search?q=org%3Ahubotio+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22lolimadeupthispackage%22&type=code
