@@ -1,4 +1,3 @@
-owncloud-docker
 owncloud-koko
 owncloud-ops
 owncloudCMF
