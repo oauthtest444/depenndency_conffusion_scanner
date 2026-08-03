@@ -1,4 +1,3 @@
-fusionjs
 horovod
 jaegertracing
 keplergl
