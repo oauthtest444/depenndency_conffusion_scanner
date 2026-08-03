@@ -1,4 +1,3 @@
-zencashio
 hyatt
 hyperledger
 hyperledger-labs
