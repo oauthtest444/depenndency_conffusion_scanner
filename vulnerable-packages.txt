@@ -1,0 +1,1 @@
+pypi	mongo-spark-connector	https://pypi.org/pypi/mongo-spark-connector/json	mongodb-developer	https://github.com/search?q=org%3Amongodb-developer+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22mongo-spark-connector%22&type=code
