@@ -1,4 +1,3 @@
-XDeFi-tech
 xiaomi-automl
 xiaomi-passport
 Xilinx
