@@ -1,4 +1,3 @@
-sorare
 Spotify-DevEx
 spotify
 spotify-lml
