@@ -1,4 +1,3 @@
-zendesklabs
 zopim
 zerobounce-llc
 Switcheo
