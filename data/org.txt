@@ -1,4 +1,3 @@
-cli
 community
 dependabot
 desktop
