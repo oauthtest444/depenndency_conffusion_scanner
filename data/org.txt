@@ -1,4 +1,3 @@
-superbet-zendesk
 tari-labs
 tari-project
 gravitational
