@@ -1,4 +1,3 @@
-DT-Team-Peru
 Dynatrace
 Dynatrace-BusSys-BI
 Dynatrace-Cloud-Automation
