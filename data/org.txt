@@ -1,4 +1,3 @@
-ProjectOpenSea
 OPPO-OpenPlatform
 oppo
 oppo-source
