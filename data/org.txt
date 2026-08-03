@@ -1,4 +1,3 @@
-hyperledger
 hyperledger-labs
 hypr
 iandunn
