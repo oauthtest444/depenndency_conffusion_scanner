@@ -1,4 +1,3 @@
-smooch
 zendesk
 zendesklabs
 zopim
