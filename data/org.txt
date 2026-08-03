@@ -1,4 +1,3 @@
-inditex-sandbox
 inditex-zboost
 inDriver
 instacart
