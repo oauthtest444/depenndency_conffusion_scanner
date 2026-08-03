@@ -1,4 +1,3 @@
-DopplerUniversity
 doppler
 dynamic-labs
 DT-Team-Peru
