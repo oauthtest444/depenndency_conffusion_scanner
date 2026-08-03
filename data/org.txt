@@ -1,4 +1,3 @@
-duetds
 Logitech
 StreamlabsSupport
 challonge
