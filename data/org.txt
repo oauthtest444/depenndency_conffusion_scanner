@@ -1,4 +1,3 @@
-octokit
 pages-themes
 paper-spa
 primer
