@@ -1,4 +1,3 @@
-OmisePayments
 omise
 omisego
 Open-Xchange-Frontend
