@@ -1,4 +1,3 @@
-moonpay-hypermint
 MyEtherWallet
 Netflix-App
 Netflix-Database
