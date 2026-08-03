@@ -1,4 +1,3 @@
-TinderSec
 toolsforhumanity
 TheTorProject
 gettorbrowser
