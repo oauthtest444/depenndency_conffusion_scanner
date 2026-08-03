@@ -1,4 +1,3 @@
-owncloudCMF
 Palantir-GitHub
 palantir
 Palta-Data-Platform
