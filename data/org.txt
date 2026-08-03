@@ -1,4 +1,3 @@
-DopplerTest
 DopplerUniversity
 doppler
 dynamic-labs
