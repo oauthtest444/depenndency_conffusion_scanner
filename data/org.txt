@@ -1,4 +1,3 @@
-dysonltd-zz
 eero-inc
 elastic
 swiftype
