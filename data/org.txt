@@ -1,4 +1,3 @@
-acronis
 Adobe-CEP
 Adobe-Experience-Cloud
 Adobe-Marketing-Cloud
