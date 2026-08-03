@@ -1,4 +1,3 @@
-spiffe
 xen-project
 Imgur
 InditexTech
