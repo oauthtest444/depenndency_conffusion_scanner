@@ -1,4 +1,3 @@
-remitano
 Remitly
 remitly-oss
 ViaTransportation
