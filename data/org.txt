@@ -1,4 +1,3 @@
-Malwarebytes
 mapbox
 innocraft
 matomo-org
