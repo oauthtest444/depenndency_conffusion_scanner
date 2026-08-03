@@ -1,4 +1,3 @@
-omisego
 Open-Xchange-Frontend
 PowerDNS
 dovecot
