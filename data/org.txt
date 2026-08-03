@@ -1,4 +1,3 @@
-payoneer
 braintree
 krakenjs
 paypal
