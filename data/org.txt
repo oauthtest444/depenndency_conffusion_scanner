@@ -1,4 +1,3 @@
-cosmos
 iqlusioninc
 tendermint
 creditkarma
