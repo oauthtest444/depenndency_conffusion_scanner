@@ -1,4 +1,3 @@
-amazonlinux
 amzn
 carbonado
 cloud9ide
