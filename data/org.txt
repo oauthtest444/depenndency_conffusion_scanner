@@ -1,4 +1,3 @@
-ExpediaInc
 ExpediaIncOpenSource
 HotelsDotCom
 Stayz
