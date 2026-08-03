@@ -1,4 +1,3 @@
-bountylabs
 gnip
 mopub
 twitter
