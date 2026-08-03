@@ -1,4 +1,3 @@
-rei
 remitano
 Remitly
 remitly-oss
