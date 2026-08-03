@@ -1,7 +1,0 @@
-npm	not-a-good-practice	https://registry.npmjs.org/not-a-good-practice	bytedance	https://github.com/search?q=org%3Abytedance+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22not-a-good-practice%22&type=code
-pypi	byted-dataloader	https://pypi.org/pypi/byted-dataloader/json	bytedance	https://github.com/search?q=org%3Abytedance+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22byted-dataloader%22&type=code
-pypi	byted-wandb	https://pypi.org/pypi/byted-wandb/json	bytedance	https://github.com/search?q=org%3Abytedance+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22byted-wandb%22&type=code
-pypi	bytedlogid	https://pypi.org/pypi/bytedlogid/json	bytedance	https://github.com/search?q=org%3Abytedance+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22bytedlogid%22&type=code
-pypi	iotop	https://pypi.org/pypi/iotop/json	bytedance	https://github.com/search?q=org%3Abytedance+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22iotop%22&type=code
-pypi	pxdbench	https://pypi.org/pypi/pxdbench/json	bytedance	https://github.com/search?q=org%3Abytedance+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22pxdbench%22&type=code
-pypi	unattended-upgrades	https://pypi.org/pypi/unattended-upgrades/json	bytedance	https://github.com/search?q=org%3Abytedance+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22unattended-upgrades%22&type=code
