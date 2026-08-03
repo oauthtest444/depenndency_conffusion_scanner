@@ -1,4 +1,3 @@
-wealthsimple
 wealthsimple-eu
 WickrInc
 WickrMe
