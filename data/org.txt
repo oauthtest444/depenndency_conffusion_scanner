@@ -1,4 +1,3 @@
-databricks-collab
 databrickslabs
 DataStax-Academy
 DataStax-Examples

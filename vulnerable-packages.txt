@@ -1,1 +1,0 @@
-pypi	unattended-upgrades	https://pypi.org/pypi/unattended-upgrades/json	databricks	https://github.com/search?q=org%3Adatabricks+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22unattended-upgrades%22&type=code
