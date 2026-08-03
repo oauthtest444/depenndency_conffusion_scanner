@@ -1,4 +1,3 @@
-carbonado
 cloud9ide
 firecracker-microvm
 goodreads
