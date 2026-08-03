@@ -1,4 +1,3 @@
-Imgur
 InditexTech
 inditex
 inditex-sandbox
