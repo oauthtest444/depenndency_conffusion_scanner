@@ -1,4 +1,3 @@
-aemsite
 alibaba
 alibaba-cloud-linux
 alibabacloud-sdk-php
