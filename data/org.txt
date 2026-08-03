@@ -1,4 +1,3 @@
-Adobe-Marketing-Cloud-Apps
 Adobe-Muse
 AdobeDocs
 AdobeXD
