@@ -1,4 +1,3 @@
-Tencent-CloudEDU
 Tencent-YouTu
 TencentCloud
 TencentCloudBase
