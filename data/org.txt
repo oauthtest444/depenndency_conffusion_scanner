@@ -1,4 +1,3 @@
-mercadolibre
 mercadopago
 Mergifyio
 Mergifyio-demo-organization
