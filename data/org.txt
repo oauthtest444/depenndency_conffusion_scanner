@@ -1,4 +1,3 @@
-Files-com
 Spark22Labs
 fireblocks
 fireblocks-labs
