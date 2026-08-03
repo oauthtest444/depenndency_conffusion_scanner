@@ -1,4 +1,3 @@
-databrickslabs
 DataStax-Academy
 DataStax-Examples
 DataStax-Toolkit
