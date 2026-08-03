@@ -1,4 +1,3 @@
-gettorbrowser
 Trendyol
 dolap-tech
 TripMobile
