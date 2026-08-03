@@ -1,4 +1,3 @@
-blockchain
 blockfi
 BMW-InnovationLab
 bmw-tech
