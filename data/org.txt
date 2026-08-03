@@ -1,4 +1,3 @@
-argoproj
 curl
 django
 libssh
