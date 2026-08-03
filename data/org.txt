@@ -1,4 +1,3 @@
-libssh2
 nginx
 nginx-architects
 nginxinc
