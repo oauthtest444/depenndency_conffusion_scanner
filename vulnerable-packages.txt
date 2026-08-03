@@ -1,0 +1,1 @@
+pypi	pickle	https://pypi.org/pypi/pickle/json	BMW-InnovationLab	https://github.com/search?q=org%3ABMW-InnovationLab+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22pickle%22&type=code

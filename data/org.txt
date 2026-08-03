@@ -1,4 +1,3 @@
-BMW-InnovationLab
 bmw-tech
 bmwcarit
 boozt-fashion
