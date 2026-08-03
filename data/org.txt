@@ -1,4 +1,3 @@
-mergifyio-testing
 LavaMoat
 MetaMask
 Miroapp-dev
