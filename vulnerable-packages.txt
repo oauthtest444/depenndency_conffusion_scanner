@@ -1,0 +1,4 @@
+pypi	copy	https://pypi.org/pypi/copy/json	amzn	https://github.com/search?q=org%3Aamzn+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22copy%22&type=code
+pypi	json	https://pypi.org/pypi/json/json	amzn	https://github.com/search?q=org%3Aamzn+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22json%22&type=code
+pypi	math	https://pypi.org/pypi/math/json	amzn	https://github.com/search?q=org%3Aamzn+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22math%22&type=code
+pypi	random	https://pypi.org/pypi/random/json	amzn	https://github.com/search?q=org%3Aamzn+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22random%22&type=code
