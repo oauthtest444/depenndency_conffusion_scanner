@@ -1,4 +1,3 @@
-airbnb
 airbnb-analysis
 hoteltonight
 Airtable-Labs
