@@ -1,4 +1,3 @@
-lob
 Localize
 duetds
 Logitech
