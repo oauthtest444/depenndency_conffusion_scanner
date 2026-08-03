@@ -1,4 +1,3 @@
-showmax
 sideeffects
 skalenetwork
 skinport
