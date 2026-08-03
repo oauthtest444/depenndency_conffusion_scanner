@@ -1,4 +1,3 @@
-XilinxRobotics
 Uplynk
 Verizon
 VerizonCloud
