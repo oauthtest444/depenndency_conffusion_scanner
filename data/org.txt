@@ -1,4 +1,3 @@
-TronTrace
 webServiceTronapi
 TRON
 troncore
