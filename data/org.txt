@@ -1,4 +1,3 @@
-amazon-connect
 amazonlinux
 amzn
 carbonado
