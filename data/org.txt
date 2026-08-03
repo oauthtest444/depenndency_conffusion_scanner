@@ -1,4 +1,3 @@
-ubiquiti
 unikrn
 urbanclap-engg
 urbandictionary
