@@ -1,4 +1,3 @@
-dolap-tech
 TripMobile
 TRON-US
 Tron-Bot-Assessment
