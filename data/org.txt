@@ -1,4 +1,3 @@
-coda
 CoinbaseStablecoin
 CoinbaseWallet
 base-org
