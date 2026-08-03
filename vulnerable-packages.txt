@@ -1,0 +1,3 @@
+npm	min-version	https://registry.npmjs.org/min-version	nextcloud	https://github.com/search?q=org%3Anextcloud+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22min-version%22&type=code
+npm	papa-parse	https://registry.npmjs.org/papa-parse	nextcloud	https://github.com/search?q=org%3Anextcloud+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22papa-parse%22&type=code
+npm	ui-sortable	https://registry.npmjs.org/ui-sortable	nextcloud	https://github.com/search?q=org%3Anextcloud+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22ui-sortable%22&type=code
