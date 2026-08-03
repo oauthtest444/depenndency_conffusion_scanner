@@ -1,4 +1,3 @@
-freshworks-developers
 sarastech
 front-egg
 frontegg-samples
