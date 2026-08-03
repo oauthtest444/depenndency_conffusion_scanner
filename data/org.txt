@@ -1,4 +1,3 @@
-jaegertracing
 keplergl
 m3db
 pyro-ppl
