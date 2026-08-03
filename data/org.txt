@@ -1,4 +1,3 @@
-HotelsDotCom
 Stayz
 vrbo
 wotifgroup
