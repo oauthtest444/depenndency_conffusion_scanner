@@ -1,4 +1,3 @@
-tencentcloudstack
 tencentyun
 tideplatform
 bytedance
