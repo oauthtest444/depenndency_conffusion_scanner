@@ -1,4 +1,3 @@
-slackapi
 slackhq
 SmartsheetConsulting
 smartsheet
