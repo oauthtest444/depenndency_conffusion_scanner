@@ -1,4 +1,3 @@
-mongodb
 mongodb-developer
 mongodb-labs
 moonpay
