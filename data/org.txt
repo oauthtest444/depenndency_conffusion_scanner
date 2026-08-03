@@ -1,4 +1,3 @@
-fireblocks-labs
 flickr
 FloQast
 PaddyPower
