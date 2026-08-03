@@ -1,4 +1,3 @@
-Netflix-Database
 netlify
 netlify-labs
 netlify-templates
