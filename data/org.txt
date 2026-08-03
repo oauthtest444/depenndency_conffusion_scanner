@@ -1,4 +1,3 @@
-AirbnbProject
 airbnb
 airbnb-analysis
 hoteltonight
