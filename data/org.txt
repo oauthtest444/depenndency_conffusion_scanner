@@ -1,4 +1,3 @@
-verizonconnect
 verizonlabs
 vz-risk
 yahoo
