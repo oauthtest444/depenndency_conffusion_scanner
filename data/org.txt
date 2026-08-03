@@ -1,4 +1,3 @@
-valvesoftware
 vanilla
 vend
 vimeo
