@@ -1,4 +1,3 @@
-tubemogul
 typekit
 Affirm
 Agoric
