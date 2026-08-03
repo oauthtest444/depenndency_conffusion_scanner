@@ -1,4 +1,3 @@
-owncloud-koko
 owncloud-ops
 owncloudCMF
 Palantir-GitHub
