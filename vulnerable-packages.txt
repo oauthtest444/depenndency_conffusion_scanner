@@ -1,0 +1,1 @@
+npm	ctrf-playwright-reporter	https://registry.npmjs.org/ctrf-playwright-reporter	woocommerce	https://github.com/search?q=org%3Awoocommerce+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22ctrf-playwright-reporter%22&type=code

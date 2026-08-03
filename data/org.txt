@@ -1,4 +1,3 @@
-woocommerce
 basecamp
 binary-com
 bitaccess
