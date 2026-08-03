@@ -1,4 +1,3 @@
-MyEtherWallet
 Netflix-App
 Netflix-Database
 netlify
