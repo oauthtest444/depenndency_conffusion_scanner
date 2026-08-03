@@ -1,4 +1,3 @@
-postmates
 priceline
 quora
 Evonik-Digital-Labs
