@@ -1,4 +1,3 @@
-aliyun
 lazada
 taobao
 AllegroTechDays
