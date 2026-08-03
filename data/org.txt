@@ -1,4 +1,3 @@
-uber-go
 uber-java
 uber-node
 uber-research
