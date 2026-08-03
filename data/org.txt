@@ -1,4 +1,3 @@
-ConsenSys-Academy
 ConsenSys-archive
 Consensys
 Consensys-DataOrg
