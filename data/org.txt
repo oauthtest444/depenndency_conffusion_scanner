@@ -1,4 +1,3 @@
-algolia
 algolia-samples
 AlibabaCloudDocs
 aemsite
