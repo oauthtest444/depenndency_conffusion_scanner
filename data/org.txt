@@ -1,4 +1,3 @@
-brave-intl
 bumble-tech
 caesarsdigital
 cardano-foundation
