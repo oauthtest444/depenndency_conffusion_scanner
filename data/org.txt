@@ -1,4 +1,3 @@
-attm2x
 Automattic
 tumblr
 woocommerce
