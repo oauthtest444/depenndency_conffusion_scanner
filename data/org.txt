@@ -1,4 +1,3 @@
-Ubiquiti-DevOps
 Ubiquiti-External
 Ubiquiti-Mobile
 Ubiquiti-Vault
