@@ -1,4 +1,3 @@
-seatme
 getyoti
 lampkicking
 yuga-labs
