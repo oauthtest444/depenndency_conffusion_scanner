@@ -1,4 +1,3 @@
-fireblocks
 fireblocks-labs
 flickr
 FloQast
