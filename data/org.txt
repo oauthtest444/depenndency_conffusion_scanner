@@ -1,4 +1,3 @@
-ruby
 rubygems
 Crosskey
 SOK-DevOps
