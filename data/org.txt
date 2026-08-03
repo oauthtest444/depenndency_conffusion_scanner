@@ -1,4 +1,3 @@
-pillarwallet
 pingidentity-provisioner
 pingidentity
 pixiv
