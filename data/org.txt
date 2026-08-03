@@ -1,4 +1,3 @@
-starbucks
 starbucks-china
 stripe
 stripe-archive
