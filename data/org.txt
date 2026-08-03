@@ -1,4 +1,3 @@
-kubernetes-security
 kubernetes-sigs
 kubernetes-ui
 larksuite
