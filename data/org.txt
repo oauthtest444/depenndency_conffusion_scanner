@@ -1,4 +1,3 @@
-UrbanCompass
 ConsenSys-Academy
 ConsenSys-archive
 Consensys
