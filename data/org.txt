@@ -1,4 +1,3 @@
-VerizonDigital
 VerizonDigitalMedia
 VzMediaPlatform
 YahooArchive
