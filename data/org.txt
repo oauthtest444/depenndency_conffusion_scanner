@@ -1,4 +1,3 @@
-allegro-playground
 allegrotech-umk-torun
 alexa
 alexa-labs
