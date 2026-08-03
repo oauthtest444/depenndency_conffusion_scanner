@@ -1,4 +1,3 @@
-pingidentity
 pixiv
 plaid
 JoinPogo
