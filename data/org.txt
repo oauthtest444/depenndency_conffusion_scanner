@@ -1,4 +1,3 @@
-Netflix-App
 Netflix-Database
 netlify
 netlify-labs
