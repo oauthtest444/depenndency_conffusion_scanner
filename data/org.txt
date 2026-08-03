@@ -1,4 +1,3 @@
-TencentCloud
 TencentCloudBase
 TencentCloudBase-Marketplace
 tencentcloudstack
