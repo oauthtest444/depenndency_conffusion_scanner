@@ -1,4 +1,3 @@
-MetaMask
 Miroapp-dev
 miroapp
 monero-project
