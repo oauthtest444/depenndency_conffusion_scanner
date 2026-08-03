@@ -1,4 +1,3 @@
-adobe-marketing-cloud-mobile
 adobe-photoshop
 adobe-platform
 adobe-private
