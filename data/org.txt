@@ -1,4 +1,3 @@
-dynatrace-partners
 dynatrace-perfclinics
 dyson-ai
 dysonltd
