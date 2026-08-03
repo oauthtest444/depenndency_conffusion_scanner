@@ -1,4 +1,3 @@
-opendistro-for-elasticsearch
 americansystems
 ATTAlascom
 ATTHACKSF
