@@ -1,4 +1,3 @@
-clario-tech
 cloudbees-compliance
 cloudbees-dse
 cloudbees-github-actions
