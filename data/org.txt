@@ -1,4 +1,3 @@
-DopplerRecruiting
 DopplerTest
 DopplerUniversity
 doppler
