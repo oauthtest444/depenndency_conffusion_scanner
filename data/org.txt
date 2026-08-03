@@ -1,4 +1,3 @@
-adobe-accessibility
 adobe-apiplatform
 adobe-experience-league
 adobe-flash
