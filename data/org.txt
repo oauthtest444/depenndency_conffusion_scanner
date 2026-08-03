@@ -1,4 +1,3 @@
-pages-themes
 paper-spa
 primer
 probot
