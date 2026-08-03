@@ -1,4 +1,3 @@
-owncloud-devops
 owncloud-docker
 owncloud-koko
 owncloud-ops
