@@ -1,4 +1,3 @@
-mopub
 twitter
 twitter-archive
 twitterdev
