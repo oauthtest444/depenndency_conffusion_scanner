@@ -1,4 +1,3 @@
-Dashlane
 databricks
 databricks-collab
 databrickslabs
