@@ -1,4 +1,3 @@
-GSA
 harvesthq
 hashgraph
 hgraph-io
