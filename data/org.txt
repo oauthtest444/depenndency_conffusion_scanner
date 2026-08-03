@@ -1,4 +1,3 @@
-skinport
 slack-samples
 slackapi
 slackhq
