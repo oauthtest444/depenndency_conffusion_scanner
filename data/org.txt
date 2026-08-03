@@ -1,4 +1,3 @@
-smartsheet
 smartsheet-mobile
 smartsheet-platform
 smartsheet-samples
