@@ -1,4 +1,3 @@
-quora
 Evonik-Digital-Labs
 Evonik-VER
 radancyco
