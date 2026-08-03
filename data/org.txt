@@ -1,4 +1,3 @@
-npm
 octokit
 pages-themes
 paper-spa
