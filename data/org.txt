@@ -1,4 +1,3 @@
-consensys-vertical-apps
 fluidity
 trufflesuite
 cornershop
