@@ -1,0 +1,5 @@
+pypi	comfy_mtb	https://pypi.org/pypi/comfy_mtb/json	dynatrace-oss	https://github.com/search?q=org%3Adynatrace-oss+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22comfy_mtb%22&type=code
+pypi	maxkb	https://pypi.org/pypi/maxkb/json	dynatrace-oss	https://github.com/search?q=org%3Adynatrace-oss+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22maxkb%22&type=code
+pypi	vim	https://pypi.org/pypi/vim/json	dynatrace-oss	https://github.com/search?q=org%3Adynatrace-oss+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22vim%22&type=code
+pypi	vnote	https://pypi.org/pypi/vnote/json	dynatrace-oss	https://github.com/search?q=org%3Adynatrace-oss+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22vnote%22&type=code
+pypi	xrdp	https://pypi.org/pypi/xrdp/json	dynatrace-oss	https://github.com/search?q=org%3Adynatrace-oss+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22xrdp%22&type=code
