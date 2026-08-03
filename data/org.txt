@@ -1,4 +1,3 @@
-vine
 fusionjs
 horovod
 jaegertracing
