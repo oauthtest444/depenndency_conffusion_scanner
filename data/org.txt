@@ -1,4 +1,3 @@
-mapbox
 innocraft
 matomo-org
 mattermost
