@@ -1,4 +1,3 @@
-Localize
 duetds
 Logitech
 StreamlabsSupport
