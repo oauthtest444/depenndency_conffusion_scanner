@@ -1,4 +1,3 @@
-dubsmash
 reddit
 reddit-archive
 rei
