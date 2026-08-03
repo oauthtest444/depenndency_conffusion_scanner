@@ -1,4 +1,3 @@
-truecaller
 trustpilot
 bountylabs
 gnip
