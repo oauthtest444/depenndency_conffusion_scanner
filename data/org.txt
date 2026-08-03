@@ -1,4 +1,3 @@
-vimeo
 SwiftVISA
 visa
 visa-DevOpsBeee
