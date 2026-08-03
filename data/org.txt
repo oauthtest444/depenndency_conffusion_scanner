@@ -1,4 +1,3 @@
-CompassChina
 UrbanCompass
 ConsenSys-Academy
 ConsenSys-archive
