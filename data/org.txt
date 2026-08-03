@@ -1,4 +1,3 @@
-oasislabs
 oasisprotocol
 OmisePayments
 omise
