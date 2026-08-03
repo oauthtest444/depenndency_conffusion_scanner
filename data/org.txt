@@ -1,4 +1,3 @@
-homebridge-eufy-security
 exness
 ExodusMovement
 ExpediaGroup
