@@ -1,4 +1,3 @@
-launchdarkly
 launchdarkly-labs
 leather-wallet
 liberapay
