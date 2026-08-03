@@ -1,4 +1,3 @@
-dynatrace-oss-contrib
 dynatrace-partners
 dynatrace-perfclinics
 dyson-ai
