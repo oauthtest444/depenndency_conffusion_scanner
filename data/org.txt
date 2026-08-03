@@ -1,4 +1,3 @@
-goodrx
 grab
 myteksi
 grammarly
