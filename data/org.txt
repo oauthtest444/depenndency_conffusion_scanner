@@ -1,4 +1,3 @@
-tendermint
 creditkarma
 CrowdStrike
 crypto-com
