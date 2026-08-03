@@ -1,4 +1,3 @@
-moneybird
 mongodb
 mongodb-developer
 mongodb-labs
