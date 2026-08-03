@@ -1,4 +1,3 @@
-paypal-examples
 venmo
 xoom
 phacility
