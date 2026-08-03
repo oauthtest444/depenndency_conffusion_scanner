@@ -1,4 +1,3 @@
-booztfashion
 brave
 brave-experiments
 brave-intl
