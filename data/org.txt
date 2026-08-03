@@ -1,4 +1,3 @@
-xoom
 phacility
 pillarwallet
 pingidentity-provisioner
