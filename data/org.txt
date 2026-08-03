@@ -1,4 +1,3 @@
-AllegroTechDays
 allegro
 allegro-actions
 allegro-develop
