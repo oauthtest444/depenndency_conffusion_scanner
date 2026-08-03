@@ -1,4 +1,3 @@
-DopplerHQ
 DopplerRecruiting
 DopplerTest
 DopplerUniversity
