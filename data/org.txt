@@ -1,4 +1,3 @@
-gojek
 goldmansachs
 goodrx
 grab
