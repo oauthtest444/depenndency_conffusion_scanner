@@ -1,4 +1,3 @@
-firecracker-microvm
 goodreads
 opendistro
 opendistro-for-elasticsearch
