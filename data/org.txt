@@ -1,4 +1,3 @@
-TRON
 troncore
 tronprotocol
 tronscan
