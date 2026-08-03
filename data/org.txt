@@ -1,4 +1,3 @@
-spotify
 spotify-lml
 spotify-research
 starbucks
