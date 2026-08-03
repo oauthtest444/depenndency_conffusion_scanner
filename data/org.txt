@@ -1,4 +1,3 @@
-facebookincubator
 facebookmicrosites
 facebookresearch
 fbsamples
