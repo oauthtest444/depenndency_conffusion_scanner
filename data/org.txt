@@ -1,4 +1,3 @@
-exness
 ExodusMovement
 ExpediaGroup
 ExpediaInc
