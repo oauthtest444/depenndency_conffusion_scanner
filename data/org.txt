@@ -1,4 +1,3 @@
-AlibabaCloudDocs
 aemsite
 alibaba
 alibaba-cloud-linux
