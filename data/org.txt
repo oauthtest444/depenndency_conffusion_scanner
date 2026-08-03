@@ -1,4 +1,3 @@
-twitterdev
 vine
 fusionjs
 horovod
