@@ -1,4 +1,3 @@
-tumblr
 woocommerce
 basecamp
 binary-com
