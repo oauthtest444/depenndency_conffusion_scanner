@@ -1,4 +1,3 @@
-AdobeDocs
 AdobeXD
 adobe
 adobe-accessibility
