@@ -1,4 +1,3 @@
-deliveroo
 deribit
 deriv-com
 regentmarkets
