@@ -1,4 +1,3 @@
-slackhq
 SmartsheetConsulting
 smartsheet
 smartsheet-mobile
