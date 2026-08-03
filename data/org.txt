@@ -1,4 +1,3 @@
-VzMediaPlatform
 YahooArchive
 aol
 arkime
