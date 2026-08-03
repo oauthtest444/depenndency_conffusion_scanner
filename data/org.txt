@@ -1,4 +1,3 @@
-charmed-kubernetes
 kube-rs
 kubernetes
 kubernetes-client
