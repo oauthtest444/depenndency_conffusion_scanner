@@ -1,4 +1,3 @@
-logihackdays
 stream-labs
 lyst
 MagicLabs
