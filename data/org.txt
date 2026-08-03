@@ -1,4 +1,3 @@
-kubernetes-client
 kubernetes-csi
 kubernetes-monitoring
 kubernetes-nightly
