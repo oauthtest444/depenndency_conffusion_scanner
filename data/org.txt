@@ -1,4 +1,3 @@
-rubygems
 Crosskey
 SOK-DevOps
 scopely
