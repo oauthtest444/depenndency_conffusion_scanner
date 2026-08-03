@@ -1,4 +1,3 @@
-netlify-labs
 netlify-templates
 Newegg
 NeweggTechie
