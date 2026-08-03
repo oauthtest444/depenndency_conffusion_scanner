@@ -1,4 +1,3 @@
-Evonik-VER
 radancyco
 rails
 razorpay
