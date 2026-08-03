@@ -1,4 +1,3 @@
-larksuite
 launchdarkly
 launchdarkly-labs
 leather-wallet
