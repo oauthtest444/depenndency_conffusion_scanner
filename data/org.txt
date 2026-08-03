@@ -1,4 +1,3 @@
-gitlabhq
 Glassdoor
 gojek
 goldmansachs

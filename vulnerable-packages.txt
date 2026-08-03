@@ -1,0 +1,1 @@
+rubygems	gitlab-iam-grpc	https://rubygems.org/api/v1/gems/gitlab-iam-grpc.json	gitlabhq	https://github.com/search?q=org%3Agitlabhq+%28path%3A%2A%2A%2FGemfile+OR+path%3A%2A%2A%2FGemfile.lock%29+NOT+is%3Aarchived+NOT+is%3Afork+%22gitlab-iam-grpc%22&type=code
