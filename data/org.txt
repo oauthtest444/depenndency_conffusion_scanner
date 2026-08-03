@@ -1,4 +1,3 @@
-discourse
 discourse-com
 django
 DopplerHQ
