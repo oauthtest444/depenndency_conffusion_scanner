@@ -1,4 +1,3 @@
-Forescout
 freshworks
 freshworks-apps
 freshworks-dev-community
