@@ -1,4 +1,3 @@
-omise
 omisego
 Open-Xchange-Frontend
 PowerDNS
