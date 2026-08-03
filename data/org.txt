@@ -1,4 +1,3 @@
-zabbix
 zabbix-tools
 smooch
 zendesk
