@@ -1,4 +1,3 @@
-facebookresearch
 fbsamples
 flowtype
 internetorg
