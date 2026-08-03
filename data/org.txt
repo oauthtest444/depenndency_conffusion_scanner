@@ -1,4 +1,3 @@
-moonpay
 moonpay-hypermint
 MyEtherWallet
 Netflix-App
