@@ -1,4 +1,3 @@
-dysonltd
 dysonltd-zz
 eero-inc
 elastic
