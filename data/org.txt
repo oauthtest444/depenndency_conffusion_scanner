@@ -1,4 +1,3 @@
-eero-inc
 elastic
 swiftype
 EngelVoelkers
