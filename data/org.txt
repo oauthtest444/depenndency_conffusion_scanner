@@ -1,4 +1,3 @@
-superbet-group
 superbet-zendesk
 tari-labs
 tari-project
