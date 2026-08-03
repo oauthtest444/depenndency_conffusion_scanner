@@ -1,4 +1,3 @@
-oasisprotocol
 OmisePayments
 omise
 omisego
