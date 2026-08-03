@@ -1,0 +1,3 @@
+pypi	launchdarkly-ai-server-sdk	https://pypi.org/pypi/launchdarkly-ai-server-sdk/json	launchdarkly-labs	https://github.com/search?q=org%3Alaunchdarkly-labs+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22launchdarkly-ai-server-sdk%22&type=code
+pypi	strands-agents-anthropic	https://pypi.org/pypi/strands-agents-anthropic/json	launchdarkly-labs	https://github.com/search?q=org%3Alaunchdarkly-labs+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22strands-agents-anthropic%22&type=code
+pypi	strands-tools	https://pypi.org/pypi/strands-tools/json	launchdarkly-labs	https://github.com/search?q=org%3Alaunchdarkly-labs+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22strands-tools%22&type=code

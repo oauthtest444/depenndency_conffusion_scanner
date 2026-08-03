@@ -1,4 +1,3 @@
-launchdarkly-labs
 leather-wallet
 liberapay
 lifeomic
