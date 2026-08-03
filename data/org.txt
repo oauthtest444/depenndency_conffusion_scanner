@@ -1,4 +1,3 @@
-smtp2go-oss
 Bitstrips
 snapchat
 sony
