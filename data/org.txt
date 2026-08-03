@@ -1,4 +1,3 @@
-alibabacloud-sdk-swift
 aliyun
 lazada
 taobao
