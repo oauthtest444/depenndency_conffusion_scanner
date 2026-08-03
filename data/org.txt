@@ -1,4 +1,3 @@
-rust-lang
 spiffe
 xen-project
 Imgur
