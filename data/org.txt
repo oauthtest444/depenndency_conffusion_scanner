@@ -1,4 +1,3 @@
-WordPress
 wordpress-mobile
 wp-cli
 XDeFi-tech
