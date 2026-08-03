@@ -1,4 +1,3 @@
-stripe-ios
 stripe-precisely-sample
 stripe-samples
 superbet-group
