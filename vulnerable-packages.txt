@@ -1,0 +1,7 @@
+npm	cpe_helpers	https://registry.npmjs.org/cpe_helpers	facebook	https://github.com/search?q=org%3Afacebook+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22cpe_helpers%22&type=code
+npm	cpe_remote	https://registry.npmjs.org/cpe_remote	facebook	https://github.com/search?q=org%3Afacebook+%2F%22dependencies%22%5Cs%2A%3A%5Cs%2A%5C%7B%5B%5E%7D%5D%2A%5C%7D%2F+NOT+is%3Aarchived+NOT+is%3Afork+%22cpe_remote%22&type=code
+pypi	dotencode	https://pypi.org/pypi/dotencode/json	facebook	https://github.com/search?q=org%3Afacebook+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22dotencode%22&type=code
+pypi	generaldelta	https://pypi.org/pypi/generaldelta/json	facebook	https://github.com/search?q=org%3Afacebook+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22generaldelta%22&type=code
+pypi	parentdelta	https://pypi.org/pypi/parentdelta/json	facebook	https://github.com/search?q=org%3Afacebook+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22parentdelta%22&type=code
+pypi	relshared	https://pypi.org/pypi/relshared/json	facebook	https://github.com/search?q=org%3Afacebook+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22relshared%22&type=code
+pypi	treemanifest	https://pypi.org/pypi/treemanifest/json	facebook	https://github.com/search?q=org%3Afacebook+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22treemanifest%22&type=code

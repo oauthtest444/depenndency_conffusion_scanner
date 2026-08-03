@@ -1,4 +1,3 @@
-facebook
 facebookexperimental
 facebookincubator
 facebookmicrosites
