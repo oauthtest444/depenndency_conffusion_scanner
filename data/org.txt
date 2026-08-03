@@ -1,4 +1,3 @@
-zendesk
 zendesklabs
 zopim
 zerobounce-llc
