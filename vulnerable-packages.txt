@@ -1,2 +1,1 @@
-pypi	detectron2	https://pypi.org/pypi/detectron2/json	facebookresearch	https://github.com/search?q=org%3Afacebookresearch+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22detectron2%22&type=code
-pypi	rospy	https://pypi.org/pypi/rospy/json	facebookresearch	https://github.com/search?q=org%3Afacebookresearch+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22rospy%22&type=code
+pypi	django-toolbelt	https://pypi.org/pypi/django-toolbelt/json	fbsamples	https://github.com/search?q=org%3Afbsamples+path%3A%2A%2A%2Frequirements.txt+NOT+is%3Aarchived+NOT+is%3Afork+%22django-toolbelt%22&type=code

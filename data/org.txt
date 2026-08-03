@@ -1,4 +1,3 @@
-fbsamples
 flowtype
 internetorg
 fanduel
