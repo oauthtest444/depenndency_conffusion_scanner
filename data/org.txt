@@ -1,4 +1,3 @@
-caesarsdigital
 cardano-foundation
 input-output-hk
 CasperSleep
