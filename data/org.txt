@@ -1,4 +1,3 @@
-LavaMoat
 MetaMask
 Miroapp-dev
 miroapp
