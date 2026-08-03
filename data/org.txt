@@ -1,4 +1,3 @@
-magiceden-oss
 mainwp
 Malwarebytes
 mapbox
