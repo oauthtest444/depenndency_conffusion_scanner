@@ -1,4 +1,3 @@
-allegrotech-umk-torun
 alexa
 alexa-labs
 amazon-archives
