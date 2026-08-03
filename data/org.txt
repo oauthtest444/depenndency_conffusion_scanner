@@ -1,4 +1,3 @@
-tari-project
 gravitational
 CFETeam
 TCloudBase
