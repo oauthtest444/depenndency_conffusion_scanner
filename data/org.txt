@@ -1,4 +1,3 @@
-mergify-sandbox
 mergifyio-testing
 LavaMoat
 MetaMask
