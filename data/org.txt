@@ -1,4 +1,3 @@
-boozt-fashion
 booztfashion
 brave
 brave-experiments
