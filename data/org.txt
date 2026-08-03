@@ -1,4 +1,3 @@
-PaddyPowerBetfair
 betfair
 betfair-datascientists
 betfair-down-under
