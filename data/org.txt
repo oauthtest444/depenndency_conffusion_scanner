@@ -1,4 +1,3 @@
-stripe-samples
 superbet-group
 superbet-zendesk
 tari-labs
