@@ -1,4 +1,3 @@
-yuga-labs
 zabbix
 zabbix-tools
 smooch
